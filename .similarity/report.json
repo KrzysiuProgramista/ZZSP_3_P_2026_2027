@@ -1,10 +1,20 @@
 {
-  "generated": "181183732dc742e7bbeccab71330337b58a3c43f",
+  "generated": "343e323fbb3d9203047fa1234bd2483011687a1b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 23,
-  "pupilCount": 5,
+  "fileCount": 31,
+  "pupilCount": 6,
   "skipped": [
+    {
+      "path": "BUDZOWSKI_TYMON/08_09_2026/app/__init__.py",
+      "pupil": "BUDZOWSKI_TYMON",
+      "chars": 0
+    },
+    {
+      "path": "BUDZOWSKI_TYMON/08_09_2026/tests/__init__.py",
+      "pupil": "BUDZOWSKI_TYMON",
+      "chars": 0
+    },
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/app/__init__.py",
       "pupil": "KLEPADLO_KRYSTIAN",
@@ -36,6 +46,20 @@
       "text": 0.8762,
       "struct": 0.885,
       "chars": 223
+    },
+    {
+      "pupils": [
+        "BUDZOWSKI_TYMON",
+        "KLEPADLO_KRYSTIAN"
+      ],
+      "paths": [
+        "BUDZOWSKI_TYMON/08_09_2026/app/main.py",
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py"
+      ],
+      "jaccard": 0.2763,
+      "text": 0.8349,
+      "struct": 0.8634,
+      "chars": 1236
     },
     {
       "pupils": [
@@ -123,6 +147,20 @@
     },
     {
       "pupils": [
+        "BUDZOWSKI_TYMON",
+        "KLEPADLO_KRYSTIAN"
+      ],
+      "paths": [
+        "BUDZOWSKI_TYMON/08_09_2026/app/models.py",
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py"
+      ],
+      "jaccard": 0.1491,
+      "text": 0.512,
+      "struct": 0.3907,
+      "chars": 583
+    },
+    {
+      "pupils": [
         "LYSAKOWSKI_NATANIEL",
         "SHYBITSKY_OLEKSANDR"
       ],
@@ -134,34 +172,6 @@
       "text": 0.7618,
       "struct": 0.6675,
       "chars": 800
-    },
-    {
-      "pupils": [
-        "KLEPADLO_KRYSTIAN",
-        "SHYBITSKY_OLEKSANDR"
-      ],
-      "paths": [
-        "KLEPADLO_KRYSTIAN/08_09_2026/tests/test_main.py",
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/tests.py"
-      ],
-      "jaccard": 0.1226,
-      "text": 0.4515,
-      "struct": 0.3636,
-      "chars": 1806
-    },
-    {
-      "pupils": [
-        "LYSAKOWSKI_NATANIEL",
-        "TROJANOWSKI_KRZYSZTOF"
-      ],
-      "paths": [
-        "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
-      ],
-      "jaccard": 0.1015,
-      "text": 0.6169,
-      "struct": 0.6284,
-      "chars": 223
     }
   ]
 }
