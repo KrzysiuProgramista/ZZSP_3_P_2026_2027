@@ -1,10 +1,151 @@
 {
-  "generated": "1df23262f15c0930ee9d55aa085cc54747c7a4e3",
+  "generated": "81e0564cb060bfa8771353024bff0feb0cc11f82",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 0,
-  "pupilCount": 0,
+  "fileCount": 9,
+  "pupilCount": 2,
   "skipped": [],
   "flagged": [],
-  "notices": []
+  "notices": [
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+      ],
+      "jaccard": 0.1015,
+      "text": 0.6169,
+      "struct": 0.6284,
+      "chars": 223
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/service.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/test.py"
+      ],
+      "jaccard": 0.012,
+      "text": 0.2748,
+      "struct": 0.2103,
+      "chars": 1109
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/service.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+      ],
+      "jaccard": 0.002,
+      "text": 0.1577,
+      "struct": 0.2399,
+      "chars": 223
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/test.py"
+      ],
+      "jaccard": 0.0011,
+      "text": 0.1459,
+      "struct": 0.1764,
+      "chars": 393
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/tests/test_bookmarks.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/test.py"
+      ],
+      "jaccard": 0.0009,
+      "text": 0.2392,
+      "struct": 0.2611,
+      "chars": 2472
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+      ],
+      "jaccard": 0.0,
+      "text": 0.1554,
+      "struct": 0.1906,
+      "chars": 223
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Service.py"
+      ],
+      "jaccard": 0.0,
+      "text": 0.2077,
+      "struct": 0.4142,
+      "chars": 836
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/main.py"
+      ],
+      "jaccard": 0.0,
+      "text": 0.403,
+      "struct": 0.4834,
+      "chars": 666
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/test.py"
+      ],
+      "jaccard": 0.0,
+      "text": 0.2458,
+      "struct": 0.258,
+      "chars": 1051
+    },
+    {
+      "pupils": [
+        "LYSAKOWSKI_NATANIEL",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Service.py"
+      ],
+      "jaccard": 0.0,
+      "text": 0.1416,
+      "struct": 0.2745,
+      "chars": 393
+    }
+  ]
 }
