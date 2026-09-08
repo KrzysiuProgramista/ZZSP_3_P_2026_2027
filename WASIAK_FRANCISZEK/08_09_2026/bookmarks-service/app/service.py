@@ -1,8 +1,8 @@
-from collections.abc import Iterable
 from datetime import datetime, timezone
 from uuid import UUID, uuid4
 
 from .models import BookmarkCreate, BookmarkPublic
+from .repository import BookmarkRepository
 
 
 class BookmarkNotFoundError(Exception):
@@ -10,31 +10,57 @@ class BookmarkNotFoundError(Exception):
 
 
 class BookmarkService:
-    def __init__(self) -> None:
-        self._bookmarks: dict[UUID, BookmarkPublic] = {}
+    def __init__(self, repository: BookmarkRepository) -> None:
+        self._repository = repository
 
     def create(self, payload: BookmarkCreate) -> BookmarkPublic:
+        cleaned_tags = self._clean_tags(payload.tags)
+
         bookmark = BookmarkPublic(
             id=uuid4(),
+            url=payload.url,
+            title=payload.title,
+            tags=cleaned_tags,
             created_at=datetime.now(timezone.utc),
-            **payload.model_dump(),
         )
-        self._bookmarks[bookmark.id] = bookmark
-        return bookmark
 
-    def list(self, tag: str | None = None) -> list[BookmarkPublic]:
-        bookmarks: Iterable[BookmarkPublic] = self._bookmarks.values()
+        return self._repository.add(bookmark)
+
+    def list_bookmarks(self, tag: str | None = None) -> list[BookmarkPublic]:
+        bookmarks = self._repository.list_all()
+
         if tag is not None:
-            bookmarks = (b for b in bookmarks if tag in b.tags)
-        return sorted(bookmarks, key=lambda b: b.created_at)
+            normalized_tag = tag.strip().lower()
+            bookmarks = [
+                bookmark
+                for bookmark in bookmarks
+                if normalized_tag in bookmark.tags
+            ]
+
+        return sorted(bookmarks, key=lambda bookmark: bookmark.created_at, reverse=True)
 
     def get(self, bookmark_id: UUID) -> BookmarkPublic:
-        try:
-            return self._bookmarks[bookmark_id]
-        except KeyError:
+        bookmark = self._repository.find_by_id(bookmark_id)
+
+        if bookmark is None:
             raise BookmarkNotFoundError(str(bookmark_id))
 
+        return bookmark
+
     def delete(self, bookmark_id: UUID) -> None:
-        if bookmark_id not in self._bookmarks:
+        deleted = self._repository.remove_by_id(bookmark_id)
+
+        if not deleted:
             raise BookmarkNotFoundError(str(bookmark_id))
-        del self._bookmarks[bookmark_id]
+
+    @staticmethod
+    def _clean_tags(tags: list[str]) -> list[str]:
+        cleaned: list[str] = []
+
+        for tag in tags:
+            normalized = tag.strip().lower()
+
+            if normalized and normalized not in cleaned:
+                cleaned.append(normalized)
+
+        return cleaned# rebuild trigger

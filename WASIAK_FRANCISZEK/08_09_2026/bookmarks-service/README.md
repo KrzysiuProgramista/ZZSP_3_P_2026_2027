@@ -5,12 +5,16 @@
 Small FastAPI service to manage bookmarks (URL, title, tags) with an in‑memory store.
 
 ## Features
+## Features
 
-- `POST /bookmarks` – create a bookmark
-- `GET /bookmarks` – list all bookmarks
-- `GET /bookmarks?tag=...` – filter by tag
-- `GET /bookmarks/{id}` – get one bookmark
-- `DELETE /bookmarks/{id}` – delete one bookmark
+- Create, list, get, filter, and delete bookmarks.
+- Validates HTTP/HTTPS URLs and title length.
+- Normalizes tags: trims whitespace, converts to lowercase, and removes duplicates/empty tags.
+- Supports case-insensitive tag filtering.
+- Returns bookmarks newest first.
+- Uses a layered design: FastAPI routes → service → repository.
+- Includes automated `TestClient` tests.
+- Runs in Docker.
 
 ## Run locally
 

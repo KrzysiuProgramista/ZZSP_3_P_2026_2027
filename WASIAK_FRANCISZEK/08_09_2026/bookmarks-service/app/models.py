@@ -10,8 +10,6 @@ class BookmarkCreate(BaseModel):
     tags: list[str] = Field(default_factory=list)
 
 
-
-
 class BookmarkPublic(BookmarkCreate):
     id: UUID
     created_at: datetime
