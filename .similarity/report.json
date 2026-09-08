@@ -1,10 +1,20 @@
 {
-  "generated": "b984795e487f9e11eeb39777bae2b03d464da33d",
+  "generated": "9dd1af6d15d7e5566ca756210480f6f080eec531",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 17,
-  "pupilCount": 4,
+  "fileCount": 23,
+  "pupilCount": 5,
   "skipped": [
+    {
+      "path": "KLEPADLO_KRYSTIAN/08_09_2026/app/__init__.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
     {
       "path": "TUTKEVYCH_VOLODYMYR/08_09_2026/app/__init__.py",
       "pupil": "TUTKEVYCH_VOLODYMYR",
@@ -71,6 +81,48 @@
     },
     {
       "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SHYBITSKY_OLEKSANDR"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
+        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/models.py"
+      ],
+      "jaccard": 0.1972,
+      "text": 0.7072,
+      "struct": 0.7588,
+      "chars": 339
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
+        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py"
+      ],
+      "jaccard": 0.1727,
+      "text": 0.5823,
+      "struct": 0.5924,
+      "chars": 286
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+      ],
+      "jaccard": 0.1647,
+      "text": 0.4789,
+      "struct": 0.5007,
+      "chars": 223
+    },
+    {
+      "pupils": [
         "LYSAKOWSKI_NATANIEL",
         "SHYBITSKY_OLEKSANDR"
       ],
@@ -85,6 +137,20 @@
     },
     {
       "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SHYBITSKY_OLEKSANDR"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/tests/test_main.py",
+        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/tests.py"
+      ],
+      "jaccard": 0.1226,
+      "text": 0.4515,
+      "struct": 0.3636,
+      "chars": 1806
+    },
+    {
+      "pupils": [
         "LYSAKOWSKI_NATANIEL",
         "TROJANOWSKI_KRZYSZTOF"
       ],
@@ -96,62 +162,6 @@
       "text": 0.6169,
       "struct": 0.6284,
       "chars": 223
-    },
-    {
-      "pupils": [
-        "LYSAKOWSKI_NATANIEL",
-        "SHYBITSKY_OLEKSANDR"
-      ],
-      "paths": [
-        "LYSAKOWSKI_NATANIEL/08_09_2026/tests/test_bookmarks.py",
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/tests.py"
-      ],
-      "jaccard": 0.0778,
-      "text": 0.426,
-      "struct": 0.4047,
-      "chars": 1806
-    },
-    {
-      "pupils": [
-        "LYSAKOWSKI_NATANIEL",
-        "TUTKEVYCH_VOLODYMYR"
-      ],
-      "paths": [
-        "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
-        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py"
-      ],
-      "jaccard": 0.0644,
-      "text": 0.6892,
-      "struct": 0.6733,
-      "chars": 286
-    },
-    {
-      "pupils": [
-        "SHYBITSKY_OLEKSANDR",
-        "TUTKEVYCH_VOLODYMYR"
-      ],
-      "paths": [
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/main.py",
-        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/main.py"
-      ],
-      "jaccard": 0.06,
-      "text": 0.7457,
-      "struct": 0.8563,
-      "chars": 659
-    },
-    {
-      "pupils": [
-        "LYSAKOWSKI_NATANIEL",
-        "TUTKEVYCH_VOLODYMYR"
-      ],
-      "paths": [
-        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
-        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/main.py"
-      ],
-      "jaccard": 0.0477,
-      "text": 0.5942,
-      "struct": 0.5882,
-      "chars": 659
     }
   ]
 }
