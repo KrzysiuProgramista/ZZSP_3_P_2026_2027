@@ -1,5 +1,5 @@
 {
-  "generated": "9dd1af6d15d7e5566ca756210480f6f080eec531",
+  "generated": "181183732dc742e7bbeccab71330337b58a3c43f",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 23,
@@ -29,7 +29,7 @@
         "TUTKEVYCH_VOLODYMYR"
       ],
       "paths": [
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py",
         "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py"
       ],
       "jaccard": 0.452,
@@ -72,7 +72,7 @@
       ],
       "paths": [
         "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
       ],
       "jaccard": 0.2139,
       "text": 0.6868,
@@ -114,7 +114,7 @@
       ],
       "paths": [
         "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
       ],
       "jaccard": 0.1647,
       "text": 0.4789,
@@ -156,7 +156,7 @@
       ],
       "paths": [
         "LYSAKOWSKI_NATANIEL/08_09_2026/app/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/Bookmark.py"
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
       ],
       "jaccard": 0.1015,
       "text": 0.6169,
