@@ -1,9 +1,9 @@
 {
-  "generated": "343e323fbb3d9203047fa1234bd2483011687a1b",
+  "generated": "6f33215eba98131ae743e9e4071b7f27a9d20a21",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 31,
-  "pupilCount": 6,
+  "fileCount": 37,
+  "pupilCount": 7,
   "skipped": [
     {
       "path": "BUDZOWSKI_TYMON/08_09_2026/app/__init__.py",
@@ -23,6 +23,16 @@
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
       "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "SIERADZKI_BARTOSZ/08_09_2026/app/__init__.py",
+      "pupil": "SIERADZKI_BARTOSZ",
+      "chars": 0
+    },
+    {
+      "path": "SIERADZKI_BARTOSZ/08_09_2026/tests/__init__.py",
+      "pupil": "SIERADZKI_BARTOSZ",
       "chars": 0
     },
     {
@@ -46,6 +56,34 @@
       "text": 0.8762,
       "struct": 0.885,
       "chars": 223
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SIERADZKI_BARTOSZ"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py",
+        "SIERADZKI_BARTOSZ/08_09_2026/app/main.py"
+      ],
+      "jaccard": 0.3344,
+      "text": 0.9179,
+      "struct": 0.9227,
+      "chars": 1176
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SIERADZKI_BARTOSZ"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
+        "SIERADZKI_BARTOSZ/08_09_2026/app/models.py"
+      ],
+      "jaccard": 0.3042,
+      "text": 0.6788,
+      "struct": 0.7506,
+      "chars": 583
     },
     {
       "pupils": [
@@ -91,6 +129,20 @@
     },
     {
       "pupils": [
+        "BUDZOWSKI_TYMON",
+        "SIERADZKI_BARTOSZ"
+      ],
+      "paths": [
+        "BUDZOWSKI_TYMON/08_09_2026/app/main.py",
+        "SIERADZKI_BARTOSZ/08_09_2026/app/main.py"
+      ],
+      "jaccard": 0.2256,
+      "text": 0.7829,
+      "struct": 0.817,
+      "chars": 1176
+    },
+    {
+      "pupils": [
         "SHYBITSKY_OLEKSANDR",
         "TROJANOWSKI_KRZYSZTOF"
       ],
@@ -130,48 +182,6 @@
       "text": 0.5823,
       "struct": 0.5924,
       "chars": 286
-    },
-    {
-      "pupils": [
-        "KLEPADLO_KRYSTIAN",
-        "TROJANOWSKI_KRZYSZTOF"
-      ],
-      "paths": [
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
-      ],
-      "jaccard": 0.1647,
-      "text": 0.4789,
-      "struct": 0.5007,
-      "chars": 223
-    },
-    {
-      "pupils": [
-        "BUDZOWSKI_TYMON",
-        "KLEPADLO_KRYSTIAN"
-      ],
-      "paths": [
-        "BUDZOWSKI_TYMON/08_09_2026/app/models.py",
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py"
-      ],
-      "jaccard": 0.1491,
-      "text": 0.512,
-      "struct": 0.3907,
-      "chars": 583
-    },
-    {
-      "pupils": [
-        "LYSAKOWSKI_NATANIEL",
-        "SHYBITSKY_OLEKSANDR"
-      ],
-      "paths": [
-        "LYSAKOWSKI_NATANIEL/08_09_2026/app/main.py",
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/main.py"
-      ],
-      "jaccard": 0.1318,
-      "text": 0.7618,
-      "struct": 0.6675,
-      "chars": 800
     }
   ]
 }
