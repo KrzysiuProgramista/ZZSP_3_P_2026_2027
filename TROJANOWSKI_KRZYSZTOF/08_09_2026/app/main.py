@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from Service import BookmarkService, Bookmark
+from app.Service import BookmarkService, Bookmark
 from typing import Optional
 
 app = FastAPI()

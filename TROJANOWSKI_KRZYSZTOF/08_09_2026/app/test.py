@@ -1,8 +1,8 @@
 import unittest
 from datetime import datetime, timezone
 
-from Bookmark import Bookmark
-from Service import BookmarkService
+from app.Bookmark import Bookmark
+from app.Service import BookmarkService
 
 
 class TestBookmarkService(unittest.IsolatedAsyncioTestCase):

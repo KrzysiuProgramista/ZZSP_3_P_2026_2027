@@ -1,4 +1,4 @@
-from Bookmark import Bookmark
+from app.Bookmark import Bookmark
 
 class BookmarkService:
     Bookmarks: list[Bookmark]
