@@ -1,8 +1,8 @@
 {
-  "generated": "b17a6f24d1d1cee600f544fc6238a20e81b93617",
+  "generated": "2018a0c73b3857e439b656227dd37995627b349e",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 46,
+  "fileCount": 47,
   "pupilCount": 9,
   "skipped": [
     {
@@ -65,25 +65,6 @@
       "text": 0.8951,
       "struct": 0.9393,
       "chars": 286
-    },
-    {
-      "sameCommit": false,
-      "later": {
-        "pupil": "WASIAK_FRANCISZEK",
-        "path": "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/main.py",
-        "assignment": "08_09_2026",
-        "added": "2026-09-08T22:10:14+02:00"
-      },
-      "earlier": {
-        "pupil": "KLEPADLO_KRYSTIAN",
-        "path": "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py",
-        "assignment": "08_09_2026",
-        "added": "2026-09-08T20:45:31+02:00"
-      },
-      "jaccard": 0.6093,
-      "text": 0.956,
-      "struct": 0.9527,
-      "chars": 1149
     }
   ],
   "notices": [
@@ -114,20 +95,6 @@
       "text": 0.9006,
       "struct": 0.9289,
       "chars": 286
-    },
-    {
-      "pupils": [
-        "SIERADZKI_BARTOSZ",
-        "WASIAK_FRANCISZEK"
-      ],
-      "paths": [
-        "SIERADZKI_BARTOSZ/08_09_2026/app/main.py",
-        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/main.py"
-      ],
-      "jaccard": 0.3449,
-      "text": 0.9101,
-      "struct": 0.9208,
-      "chars": 1149
     },
     {
       "pupils": [
@@ -216,16 +183,30 @@
     {
       "pupils": [
         "BUDZOWSKI_TYMON",
-        "WASIAK_FRANCISZEK"
+        "KLEPADLO_KRYSTIAN"
       ],
       "paths": [
         "BUDZOWSKI_TYMON/08_09_2026/app/main.py",
-        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/main.py"
+        "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py"
       ],
-      "jaccard": 0.2837,
-      "text": 0.8179,
-      "struct": 0.8235,
-      "chars": 1149
+      "jaccard": 0.2763,
+      "text": 0.8349,
+      "struct": 0.8634,
+      "chars": 1236
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/08_09_2026/models.py",
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
+      ],
+      "jaccard": 0.2648,
+      "text": 0.7583,
+      "struct": 0.8175,
+      "chars": 223
     }
   ]
 }
