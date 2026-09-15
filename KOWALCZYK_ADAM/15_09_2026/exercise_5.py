@@ -31,6 +31,3 @@ print("overall grade average:", df_grades[["maths", "physics", "english"]].to_nu
 
 
 # used 0.19$
-
-# after every prompt (exercise), i asked claude to add useful info
-# to the md, so itll be more usefull next time and more token-friendly
