@@ -1,8 +1,8 @@
 {
-  "generated": "8e3001bc0252583b11ab5daa2ecb0a02a1bbed45",
+  "generated": "3990c46730f350291a5e481a0711c62d5aed2e7b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 56,
+  "fileCount": 72,
   "pupilCount": 9,
   "skipped": [
     {
@@ -22,6 +22,41 @@
     },
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie1.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie3.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie4.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie5.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie7.py",
       "pupil": "KLEPADLO_KRYSTIAN",
       "chars": 0
     },
