@@ -1,8 +1,8 @@
 {
-  "generated": "3990c46730f350291a5e481a0711c62d5aed2e7b",
+  "generated": "6a626d96656ad6eae7814d50a2217dd7427bd874",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 72,
+  "fileCount": 73,
   "pupilCount": 9,
   "skipped": [
     {
@@ -22,41 +22,6 @@
     },
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie1.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie3.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie4.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie5.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
-      "pupil": "KLEPADLO_KRYSTIAN",
-      "chars": 0
-    },
-    {
-      "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie7.py",
       "pupil": "KLEPADLO_KRYSTIAN",
       "chars": 0
     },
@@ -103,6 +68,20 @@
     }
   ],
   "notices": [
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "KOWALCZYK_ADAM"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
+        "KOWALCZYK_ADAM/15_09_2026/exercise_6.py"
+      ],
+      "jaccard": 0.4949,
+      "text": 0.8898,
+      "struct": 0.9224,
+      "chars": 458
+    },
     {
       "pupils": [
         "TROJANOWSKI_KRZYSZTOF",
@@ -228,20 +207,6 @@
       "text": 0.8349,
       "struct": 0.8634,
       "chars": 1236
-    },
-    {
-      "pupils": [
-        "KOWALCZYK_ADAM",
-        "TROJANOWSKI_KRZYSZTOF"
-      ],
-      "paths": [
-        "KOWALCZYK_ADAM/08_09_2026/models.py",
-        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py"
-      ],
-      "jaccard": 0.2648,
-      "text": 0.7583,
-      "struct": 0.8175,
-      "chars": 223
     }
   ]
 }
