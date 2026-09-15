@@ -20,6 +20,8 @@ dtype for the whole array. This difference bites later, see `to_numpy()` below.
 
 ```python
 pd.Series([1, 3, 5, np.nan, 6, 8])          # no index given -> default RangeIndex
+pd.Series([1, 2, 3], index=["a", "b", "c"]) # custom string index
+pd.Series({"a": 1, "b": 2, "c": 3})         # from a dict — the keys become the index
 
 dates = pd.date_range("20130101", periods=6)
 pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list("ABCD"))
@@ -41,10 +43,83 @@ pd.DataFrame({
 
 You end up with a mix of dtypes here — `df.dtypes` shows what each column actually is.
 
+The DataFrame constructor also accepts row-oriented input. Same shape, different layout:
+
+```python
+# list of dicts — one dict per row, keys become column labels,
+# missing keys in any row become NaN in that column
+pd.DataFrame([
+    {"student": "Anna", "maths": 5},
+    {"student": "Piotr", "maths": 3},
+])
+
+# list of lists — you have to pass columns=[...] because the rows carry no labels
+pd.DataFrame(
+    [["Anna", 5], ["Piotr", 3]],
+    columns=["student", "maths"],
+)
+```
+
+## Changing the index
+
+`set_index("col")` promotes a column to be the row index and returns a new DataFrame.
+`reset_index()` is the inverse — the current index moves back into a regular column and
+the frame gets the default `RangeIndex` again.
+
+```python
+df2 = df.set_index("student")   # "student" is now the row label
+df2.reset_index()               # back to numeric rows, "student" is a column again
+```
+
+Both return a new frame by default; pass `inplace=True` if you want to mutate. `set_index`
+also accepts a list of columns for a MultiIndex.
+
+## Series attributes and access
+
+A Series has four attributes worth naming directly:
+
+- `s.values` — the underlying array without the labels
+- `s.index`  — the labels
+- `s.dtype`  — singular. A Series is one column, so it has exactly one dtype (compare `df.dtypes`, which is per-column)
+- `s.name`   — set via `pd.Series(..., name="grades")`, otherwise `None`. If the Series ends up as a column in a DataFrame, this becomes the column name.
+
+Access is the same shape as for a DataFrame:
+
+```python
+s["a"]      # by label
+s.iloc[0]   # by position
+s.at["a"]   # scalar, fast
+s.iat[0]    # scalar, fast, positional
+```
+
+Scalar and element-wise arithmetic broadcasts across the whole Series: `s * 2`, `s + 10`,
+`s > 15` all return a Series aligned on the same index. The same works on a DataFrame.
+
 ## Looking at the data
 
-`head()` and `tail(3)` for the top and bottom rows. `df.index` and `df.columns` for the
-labels. `describe()` for a quick statistical summary, `df.T` to transpose.
+`head()` and `tail(3)` for the top and bottom rows. `df.sample(n)` picks `n` random rows
+(pass `random_state=...` for a reproducible pick). `df.shape` gives `(rows, cols)`.
+`df.index` and `df.columns` are the labels, `df.dtypes` is the dtype of each column.
+`df.T` transposes.
+
+`df.info()` prints, in order:
+
+1. the class of the object
+2. the index type and the range of row labels
+3. total column count
+4. a per-column table with position, name, non-null count, and dtype
+5. a dtype tally (how many columns of each dtype)
+6. memory usage of the frame
+
+`describe()` gives a quick statistical summary of the **numeric columns only** —
+non-numeric columns are skipped. Its rows are:
+
+- `count` — number of non-missing values
+- `mean`  — arithmetic average
+- `std`   — standard deviation (spread around the mean)
+- `min`   — smallest value
+- `25%` / `50%` / `75%` — quartiles; the 50% row is the median
+- `max`   — largest value
 
 Sorting comes in two flavours: `sort_index(axis=1, ascending=False)` sorts along an axis by
 its labels, `sort_values(by="B")` sorts by the actual values.
@@ -126,7 +201,32 @@ substitutes, and `pd.isna(df)` gives you the boolean mask if you want to look be
 
 ## Operations
 
-`df.mean()` averages each column, `df.mean(axis=1)` each row.
+`df.mean()` averages each column, `df.mean(axis=1)` each row. The other basic reductions
+follow the same shape: `df.sum()`, `df.min()`, `df.max()`, `df.std()`, `df.median()`,
+`df.count()`. They all work on a Series too (returning a scalar) and on a DataFrame
+(returning a Series indexed by column).
+
+`idxmax()` / `idxmin()` return the *index label* of the max/min instead of the value —
+handy for "which row has the highest X" questions:
+
+```python
+df["physics"].idxmax()                 # index label of the top physics score
+df.loc[df["physics"].idxmax(), "name"] # look up another column on that same row
+```
+
+Boolean masks double as counters, because `True` sums as 1 and `False` as 0:
+
+```python
+(df["english"] == 5).sum()   # how many rows equal 5
+(df["maths"] > 3).mean()     # fraction of rows above 3
+```
+
+Reductions on a mixed frame fail when a column can't be reduced (e.g. strings and a
+numeric mean in the same call). Pass `numeric_only=True` to skip non-numeric columns:
+
+```python
+df.mean(numeric_only=True)   # averages only int/float columns, ignores strings
+```
 
 When two objects with different labels meet, the result is aligned to the *union* of the
 index or columns; pandas broadcasts along the dimension you specify and fills whatever
