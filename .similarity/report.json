@@ -1,8 +1,8 @@
 {
-  "generated": "6a626d96656ad6eae7814d50a2217dd7427bd874",
+  "generated": "08f7ade05aa8a13a7f243fd844bf0551d0478047",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 73,
+  "fileCount": 77,
   "pupilCount": 9,
   "skipped": [
     {
@@ -99,6 +99,20 @@
     {
       "pupils": [
         "KOWALCZYK_ADAM",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/15_09_2026/exercise_2.py",
+        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py"
+      ],
+      "jaccard": 0.4394,
+      "text": 0.9146,
+      "struct": 0.8809,
+      "chars": 440
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
         "WASIAK_FRANCISZEK"
       ],
       "paths": [
@@ -109,6 +123,20 @@
       "text": 0.9006,
       "struct": 0.9289,
       "chars": 286
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py"
+      ],
+      "jaccard": 0.4357,
+      "text": 0.9486,
+      "struct": 0.9657,
+      "chars": 397
     },
     {
       "pupils": [
@@ -179,34 +207,6 @@
       "text": 0.6788,
       "struct": 0.7506,
       "chars": 583
-    },
-    {
-      "pupils": [
-        "SHYBITSKY_OLEKSANDR",
-        "WASIAK_FRANCISZEK"
-      ],
-      "paths": [
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/models.py",
-        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/models.py"
-      ],
-      "jaccard": 0.2969,
-      "text": 0.8154,
-      "struct": 0.8312,
-      "chars": 338
-    },
-    {
-      "pupils": [
-        "BUDZOWSKI_TYMON",
-        "KLEPADLO_KRYSTIAN"
-      ],
-      "paths": [
-        "BUDZOWSKI_TYMON/08_09_2026/app/main.py",
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py"
-      ],
-      "jaccard": 0.2763,
-      "text": 0.8349,
-      "struct": 0.8634,
-      "chars": 1236
     }
   ]
 }
