@@ -1,8 +1,8 @@
 {
-  "generated": "08f7ade05aa8a13a7f243fd844bf0551d0478047",
+  "generated": "9e18abec031c43859767970222cdaeae61cc705b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 77,
+  "fileCount": 85,
   "pupilCount": 9,
   "skipped": [
     {
@@ -47,6 +47,44 @@
     }
   ],
   "flagged": [
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/15_09_2026/ex04_inspect.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-19T17:52:41+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie4.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-15T17:35:30+02:00"
+      },
+      "jaccard": 0.6836,
+      "text": 0.8068,
+      "struct": 0.8325,
+      "chars": 426
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-19T17:52:41+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-15T17:35:30+02:00"
+      },
+      "jaccard": 0.6795,
+      "text": 0.9639,
+      "struct": 0.9729,
+      "chars": 397
+    },
     {
       "sameCommit": false,
       "later": {
@@ -141,6 +179,34 @@
     {
       "pupils": [
         "KOWALCZYK_ADAM",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/15_09_2026/challenge_weather.py",
+        "TUTKEVYCH_VOLODYMYR/15_09_2026/challenge_weather.py"
+      ],
+      "jaccard": 0.365,
+      "text": 0.8121,
+      "struct": 0.8,
+      "chars": 590
+    },
+    {
+      "pupils": [
+        "TROJANOWSKI_KRZYSZTOF",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py",
+        "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py"
+      ],
+      "jaccard": 0.3438,
+      "text": 0.9598,
+      "struct": 0.9637,
+      "chars": 406
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
         "SHYBITSKY_OLEKSANDR"
       ],
       "paths": [
@@ -179,34 +245,6 @@
       "text": 0.8045,
       "struct": 0.872,
       "chars": 286
-    },
-    {
-      "pupils": [
-        "KLEPADLO_KRYSTIAN",
-        "WASIAK_FRANCISZEK"
-      ],
-      "paths": [
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
-        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/models.py"
-      ],
-      "jaccard": 0.3182,
-      "text": 0.734,
-      "struct": 0.6926,
-      "chars": 338
-    },
-    {
-      "pupils": [
-        "KLEPADLO_KRYSTIAN",
-        "SIERADZKI_BARTOSZ"
-      ],
-      "paths": [
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/models.py",
-        "SIERADZKI_BARTOSZ/08_09_2026/app/models.py"
-      ],
-      "jaccard": 0.3042,
-      "text": 0.6788,
-      "struct": 0.7506,
-      "chars": 583
     }
   ]
 }
