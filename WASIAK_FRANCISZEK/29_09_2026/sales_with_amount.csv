@@ -1,0 +1,16 @@
+date,product,category,region,quantity,unit_price,amount
+2026-01-05,Laptop,Electronics,North,3,3500.0,10500.0
+2026-01-07,Mouse,Electronics,North,25,45.0,1125.0
+2026-01-12,Desk,Furniture,South,5,890.0,4450.0
+2026-01-15,Laptop,Electronics,South,2,3500.0,7000.0
+2026-01-19,Chair,Furniture,North,12,450.0,5400.0
+2026-02-02,Monitor,Electronics,East,8,1200.0,9600.0
+2026-02-08,Desk,Furniture,East,3,890.0,2670.0
+2026-02-14,Mouse,Electronics,West,40,45.0,1800.0
+2026-02-21,Laptop,Electronics,West,1,3500.0,3500.0
+2026-03-03,Chair,Furniture,South,20,450.0,9000.0
+2026-03-11,Monitor,Electronics,North,4,1200.0,4800.0
+2026-03-18,Keyboard,Electronics,East,15,199.0,2985.0
+2026-03-25,Desk,Furniture,West,7,890.0,6230.0
+2026-04-02,Laptop,Electronics,North,5,3500.0,17500.0
+2026-04-09,Chair,Furniture,East,9,450.0,4050.0
