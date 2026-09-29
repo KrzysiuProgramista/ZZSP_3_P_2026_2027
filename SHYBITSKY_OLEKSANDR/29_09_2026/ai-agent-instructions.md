@@ -110,3 +110,70 @@ Priority levels: **MUST** (always), **SHOULD** (default, deviate only with a rea
 ### Code quality
 - VERIFY the final code is readable, logically consistent, and free of unused variables and imports.
 - VERIFY the code runs from top to bottom on a fresh interpreter, when it is possible to execute it.
+
+## 5. Quick reference: read functions
+
+### Basic calls
+
+```python
+import pandas as pd
+
+# Minimal forms (always add an explicit encoding, see section 1)
+sales_df = pd.read_csv("sales.csv", encoding="utf-8")
+sales_df = pd.read_csv("sales.csv", sep=";", encoding="utf-8", decimal=",")
+data_df = pd.read_json("data.json", encoding="utf-8")
+report_df = pd.read_excel("report.xlsx", sheet_name="Q1")
+```
+
+### Typical Polish / Excel CSV with the important parameters
+
+```python
+from pathlib import Path
+import pandas as pd
+
+csv_path = Path("data") / "sales.csv"
+
+sales_df = pd.read_csv(
+    csv_path,
+    sep=";",
+    decimal=",",
+    thousands=" ",
+    encoding="utf-8-sig",          # or "cp1250" / "iso-8859-2" for legacy files
+    header=0,
+    usecols=["order_date", "postcode", "amount"],
+    dtype={"postcode": str},
+    parse_dates=["order_date"],
+    date_format="%d.%m.%Y",
+    na_values=["brak", "-", "n/a"],
+)
+
+report_df = pd.read_excel("report.xlsx", sheet_name="Q1", engine="openpyxl")
+json_df = pd.read_json("data.json", orient="records", encoding="utf-8")
+jsonl_df = pd.read_json("data.jsonl", lines=True, encoding="utf-8")
+```
+
+### The parameters that actually matter
+
+| Parameter | Purpose |
+|---|---|
+| `sep` | The separator. Polish exports often use `;`. |
+| `decimal` | `,` in Polish-locale files. |
+| `thousands` | Thousands separator, often a space (sometimes a non-breaking space `\xa0`, which needs separate cleaning). |
+| `encoding` | `utf-8`; `utf-8-sig` for Excel CSV with BOM (otherwise the first column may be named `\ufeffId`); `cp1250` or `iso-8859-2` (alias `latin2`) for older Polish files. |
+| `header` | Which row holds the column names, or `None` if there is no header row. |
+| `names` | Supply your own column names. If the file already has a header row, combine with `header=0` so the old header is not read as data. |
+| `usecols` | Read only some columns. Much faster and lighter on big files. |
+| `nrows` | Read only the first n rows, for a quick look. |
+| `skiprows`, `skipfooter` | Skip titles or summary rows in reports (`skipfooter` requires `engine="python"`). |
+| `na_values` | Extra strings to treat as missing, e.g. `["brak", "-", "n/a"]`. Added to the defaults. |
+| `keep_default_na` | Set to `False` to switch off default missing-value strings (e.g. when `"NA"` is real data). |
+| `parse_dates`, `date_format` | Parse these columns as dates, with an explicit format such as `"%d.%m.%Y"` (pandas 2.0+). |
+| `dtype` | Force a column's type, e.g. `{"postcode": str}`. Also use for PESEL, NIP, and any ID with leading zeros. |
+| `on_bad_lines`, `quotechar` | Handle malformed rows and quoting problems in CSV. |
+| `sheet_name` | Excel sheet by name or index; `None` reads all sheets into a dict. |
+| `lines`, `orient` | JSON Lines and the JSON layout. |
+
+### Diagnosing an unknown CSV
+
+- `sep=None, engine="python"` lets pandas sniff the delimiter. It is slower, so use it to identify the format, then set `sep` explicitly.
+- Combine with `nrows=5` and check `df.shape` and `df.head()` to confirm the parse looks right.
