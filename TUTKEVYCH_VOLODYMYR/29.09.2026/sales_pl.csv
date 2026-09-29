@@ -1,9 +1,0 @@
-data;produkt;kategoria;region;ilosc;cena_jednostkowa
-2026-01-05;Laptop;Elektronika;Polnoc;3;3500,00
-2026-01-07;Mysz;Elektronika;Polnoc;25;45,50
-2026-01-12;Biurko;Meble;Poludnie;5;890,99
-2026-01-15;Laptop;Elektronika;Poludnie;2;3500,00
-2026-01-19;Krzeslo;Meble;Polnoc;12;450,00
-2026-02-02;Monitor;Elektronika;Wschod;8;1200,50
-2026-02-08;Biurko;Meble;Wschod;3;890,99
-2026-02-14;Mysz;Elektronika;Zachod;40;45,50
