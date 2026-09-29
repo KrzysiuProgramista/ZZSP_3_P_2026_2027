@@ -1,8 +1,8 @@
 {
-  "generated": "9e18abec031c43859767970222cdaeae61cc705b",
+  "generated": "f99376db2d5bd9caa01796ceb5da54972bf2ef4b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 85,
+  "fileCount": 124,
   "pupilCount": 9,
   "skipped": [
     {
@@ -122,6 +122,34 @@
     },
     {
       "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SIERADZKI_BARTOSZ"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "SIERADZKI_BARTOSZ/15_09_2026/Exercise2-pandas.py"
+      ],
+      "jaccard": 0.484,
+      "text": 0.8187,
+      "struct": 0.7771,
+      "chars": 397
+    },
+    {
+      "pupils": [
+        "SIERADZKI_BARTOSZ",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "SIERADZKI_BARTOSZ/15_09_2026/Exercise2-pandas.py",
+        "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py"
+      ],
+      "jaccard": 0.4753,
+      "text": 0.8275,
+      "struct": 0.7834,
+      "chars": 406
+    },
+    {
+      "pupils": [
         "TROJANOWSKI_KRZYSZTOF",
         "TUTKEVYCH_VOLODYMYR"
       ],
@@ -182,6 +210,20 @@
         "TUTKEVYCH_VOLODYMYR"
       ],
       "paths": [
+        "KOWALCZYK_ADAM/29_09_2026/exercise_1.py",
+        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
+      ],
+      "jaccard": 0.3659,
+      "text": 0.8343,
+      "struct": 0.7968,
+      "chars": 277
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
         "KOWALCZYK_ADAM/15_09_2026/challenge_weather.py",
         "TUTKEVYCH_VOLODYMYR/15_09_2026/challenge_weather.py"
       ],
@@ -192,59 +234,17 @@
     },
     {
       "pupils": [
-        "TROJANOWSKI_KRZYSZTOF",
+        "SHYBITSKY_OLEKSANDR",
         "TUTKEVYCH_VOLODYMYR"
       ],
       "paths": [
-        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py",
-        "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py"
+        "SHYBITSKY_OLEKSANDR/29_09_2026/ex1.py",
+        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
       ],
-      "jaccard": 0.3438,
-      "text": 0.9598,
-      "struct": 0.9637,
-      "chars": 406
-    },
-    {
-      "pupils": [
-        "KOWALCZYK_ADAM",
-        "SHYBITSKY_OLEKSANDR"
-      ],
-      "paths": [
-        "KOWALCZYK_ADAM/08_09_2026/models.py",
-        "SHYBITSKY_OLEKSANDR/08_09_2026/bookmarks/models.py"
-      ],
-      "jaccard": 0.3353,
-      "text": 0.8384,
-      "struct": 0.8381,
-      "chars": 286
-    },
-    {
-      "pupils": [
-        "KLEPADLO_KRYSTIAN",
-        "SIERADZKI_BARTOSZ"
-      ],
-      "paths": [
-        "KLEPADLO_KRYSTIAN/08_09_2026/app/main.py",
-        "SIERADZKI_BARTOSZ/08_09_2026/app/main.py"
-      ],
-      "jaccard": 0.3344,
-      "text": 0.9179,
-      "struct": 0.9227,
-      "chars": 1176
-    },
-    {
-      "pupils": [
-        "TUTKEVYCH_VOLODYMYR",
-        "WASIAK_FRANCISZEK"
-      ],
-      "paths": [
-        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py",
-        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/models.py"
-      ],
-      "jaccard": 0.3199,
-      "text": 0.8045,
-      "struct": 0.872,
-      "chars": 286
+      "jaccard": 0.3643,
+      "text": 0.7787,
+      "struct": 0.7907,
+      "chars": 387
     }
   ]
 }
