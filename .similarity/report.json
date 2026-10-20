@@ -1,10 +1,250 @@
 {
-  "generated": "1df23262f15c0930ee9d55aa085cc54747c7a4e3",
+  "generated": "f99376db2d5bd9caa01796ceb5da54972bf2ef4b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 0,
-  "pupilCount": 0,
-  "skipped": [],
-  "flagged": [],
-  "notices": []
+  "fileCount": 124,
+  "pupilCount": 9,
+  "skipped": [
+    {
+      "path": "BUDZOWSKI_TYMON/08_09_2026/app/__init__.py",
+      "pupil": "BUDZOWSKI_TYMON",
+      "chars": 0
+    },
+    {
+      "path": "BUDZOWSKI_TYMON/08_09_2026/tests/__init__.py",
+      "pupil": "BUDZOWSKI_TYMON",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/08_09_2026/app/__init__.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
+      "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "SIERADZKI_BARTOSZ/08_09_2026/app/__init__.py",
+      "pupil": "SIERADZKI_BARTOSZ",
+      "chars": 0
+    },
+    {
+      "path": "SIERADZKI_BARTOSZ/08_09_2026/tests/__init__.py",
+      "pupil": "SIERADZKI_BARTOSZ",
+      "chars": 0
+    },
+    {
+      "path": "TUTKEVYCH_VOLODYMYR/08_09_2026/app/__init__.py",
+      "pupil": "TUTKEVYCH_VOLODYMYR",
+      "chars": 0
+    },
+    {
+      "path": "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/__init__.py",
+      "pupil": "WASIAK_FRANCISZEK",
+      "chars": 0
+    }
+  ],
+  "flagged": [
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/15_09_2026/ex04_inspect.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-19T17:52:41+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie4.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-15T17:35:30+02:00"
+      },
+      "jaccard": 0.6836,
+      "text": 0.8068,
+      "struct": 0.8325,
+      "chars": 426
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-19T17:52:41+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "assignment": "15_09_2026",
+        "added": "2026-09-15T17:35:30+02:00"
+      },
+      "jaccard": 0.6795,
+      "text": 0.9639,
+      "struct": 0.9729,
+      "chars": 397
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KOWALCZYK_ADAM",
+        "path": "KOWALCZYK_ADAM/08_09_2026/models.py",
+        "assignment": "08_09_2026",
+        "added": "2026-09-08T22:48:25+02:00"
+      },
+      "earlier": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py",
+        "assignment": "08_09_2026",
+        "added": "2026-09-08T18:05:17+02:00"
+      },
+      "jaccard": 0.6235,
+      "text": 0.8951,
+      "struct": 0.9393,
+      "chars": 286
+    }
+  ],
+  "notices": [
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "KOWALCZYK_ADAM"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
+        "KOWALCZYK_ADAM/15_09_2026/exercise_6.py"
+      ],
+      "jaccard": 0.4949,
+      "text": 0.8898,
+      "struct": 0.9224,
+      "chars": 458
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "SIERADZKI_BARTOSZ"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "SIERADZKI_BARTOSZ/15_09_2026/Exercise2-pandas.py"
+      ],
+      "jaccard": 0.484,
+      "text": 0.8187,
+      "struct": 0.7771,
+      "chars": 397
+    },
+    {
+      "pupils": [
+        "SIERADZKI_BARTOSZ",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "SIERADZKI_BARTOSZ/15_09_2026/Exercise2-pandas.py",
+        "TUTKEVYCH_VOLODYMYR/15_09_2026/ex02_dataframe.py"
+      ],
+      "jaccard": 0.4753,
+      "text": 0.8275,
+      "struct": 0.7834,
+      "chars": 406
+    },
+    {
+      "pupils": [
+        "TROJANOWSKI_KRZYSZTOF",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "TROJANOWSKI_KRZYSZTOF/08_09_2026/app/Bookmark.py",
+        "TUTKEVYCH_VOLODYMYR/08_09_2026/app/models.py"
+      ],
+      "jaccard": 0.452,
+      "text": 0.8762,
+      "struct": 0.885,
+      "chars": 223
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/15_09_2026/exercise_2.py",
+        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py"
+      ],
+      "jaccard": 0.4394,
+      "text": 0.9146,
+      "struct": 0.8809,
+      "chars": 440
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "WASIAK_FRANCISZEK"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/08_09_2026/models.py",
+        "WASIAK_FRANCISZEK/08_09_2026/bookmarks-service/app/models.py"
+      ],
+      "jaccard": 0.4357,
+      "text": 0.9006,
+      "struct": 0.9289,
+      "chars": 286
+    },
+    {
+      "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "TROJANOWSKI_KRZYSZTOF"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie2.py",
+        "TROJANOWSKI_KRZYSZTOF/15_09_2026/Zadanie2.py"
+      ],
+      "jaccard": 0.4357,
+      "text": 0.9486,
+      "struct": 0.9657,
+      "chars": 397
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/29_09_2026/exercise_1.py",
+        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
+      ],
+      "jaccard": 0.3659,
+      "text": 0.8343,
+      "struct": 0.7968,
+      "chars": 277
+    },
+    {
+      "pupils": [
+        "KOWALCZYK_ADAM",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "KOWALCZYK_ADAM/15_09_2026/challenge_weather.py",
+        "TUTKEVYCH_VOLODYMYR/15_09_2026/challenge_weather.py"
+      ],
+      "jaccard": 0.365,
+      "text": 0.8121,
+      "struct": 0.8,
+      "chars": 590
+    },
+    {
+      "pupils": [
+        "SHYBITSKY_OLEKSANDR",
+        "TUTKEVYCH_VOLODYMYR"
+      ],
+      "paths": [
+        "SHYBITSKY_OLEKSANDR/29_09_2026/ex1.py",
+        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
+      ],
+      "jaccard": 0.3643,
+      "text": 0.7787,
+      "struct": 0.7907,
+      "chars": 387
+    }
+  ]
 }
