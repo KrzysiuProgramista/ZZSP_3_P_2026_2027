@@ -1,0 +1,14 @@
+[
+  {"id": 1, "name": "Laptop", "price": 3500.0,
+   "supplier": {"name": "TechCorp", "country": "PL"},
+   "tags": ["electronics", "computers"]},
+  {"id": 2, "name": "Desk", "price": 890.99,
+   "supplier": {"name": "WoodWorks", "country": "DE"},
+   "tags": ["furniture", "office"]},
+  {"id": 3, "name": "Monitor", "price": 1200.5,
+   "supplier": {"name": "TechCorp", "country": "PL"},
+   "tags": ["electronics", "displays"]},
+  {"id": 4, "name": "Chair", "price": 450.0,
+   "supplier": {"name": "SitWell", "country": "CZ"},
+   "tags": ["furniture", "office"]}
+]
