@@ -46,7 +46,7 @@ def test_filter_by_values(sample_data):
     
     with pytest.raises(ValueError):
         filter_by_values(sample_data, 'brak_kolumny', ['North'])
-        
+
 def test_top_n(sample_data):
     result = top_n(sample_data, 'quantity', 2)
     assert len(result) == 2
@@ -54,3 +54,35 @@ def test_top_n(sample_data):
     
     with pytest.raises(ValueError):
         top_n(sample_data, 'test_kolumny', 2)
+
+# Chellange
+
+def report(df: pd.DataFrame, **filters) -> pd.DataFrame:
+    """Tworzy raport akceptujący dowolną liczbę filtrów column=value[span_0](start_span)[span_0](end_span)."""
+    
+    # 1. Walidacja każdej żądanej kolumny[span_1](start_span)[span_1](end_span)
+    for column in filters.keys():
+        if column not in df.columns:
+            # Zgłoszenie błędu ValueError w przypadku nieznanej kolumny[span_2](start_span)[span_2](end_span)
+            raise ValueError(f"Nieznana kolumna: '{column}'")
+
+    filtered_df = df.copy()
+    
+    # 2. Aplikacja wszystkich filtrów (logika AND)[span_3](start_span)[span_3](end_span)
+    for column, value in filters.items():
+        # Wiersz musi pasować do każdej dostarczonej pary column=value[span_4](start_span)[span_4](end_span)
+        filtered_df = filtered_df[filtered_df[column] == value]
+
+    # 3. Wypisanie dopasowanych wierszy / całkowitej liczby wierszy[span_5](start_span)[span_5](end_span)
+    print(f"Matched rows / Total rows: {len(filtered_df)} / {len(df)}")
+
+    # 4. Wypisanie całkowitej wartości dopasowanej sprzedaży[span_6](start_span)[span_6](end_span)
+    # Definicja całkowitej wartości: quantity * unit_price[span_7](start_span)[span_7](end_span)
+    if 'quantity' in df.columns and 'unit_price' in df.columns:
+        total_value = (filtered_df['quantity'] * filtered_df['unit_price']).sum()
+    else:
+        total_value = 0.0
+    print(f"Total value of matching sales: {total_value:.2f}")
+
+    # 5. Zwrócenie przefiltrowanego obiektu DataFrame[span_8](start_span)[span_8](end_span)
+    return filtered_df
