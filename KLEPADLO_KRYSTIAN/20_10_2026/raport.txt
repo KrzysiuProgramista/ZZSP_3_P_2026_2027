@@ -1,0 +1,9 @@
+Raport z działania programu Librus Intelligence.
+Zgodnie z wymogami dotyczącymi prywatności i bezpieczeństwa danych, program został przetestowany wyłącznie na fikcyjnym pliku testowym grades.csv. Żadne osobiste dane nie zostały wyeksportowane ani przetworzone online.
+
+Wyniki testów głównych funkcji programu na fikcyjnym zestawie:
+- Funkcja 1 (Oceny poniżej progu): Po wybraniu progu "3", program poprawnie odizolował i zwrócił ocenę "2" z matematyki.
+- Funkcja 2 (Wyszukiwanie przedmiotu): Po wpisaniu "Informatyka", system zastosował maskę logiczną i wyświetlił dokładnie 3 wpisy powiązane z tym przedmiotem.
+- Funkcja 4 (Podsumowanie): Program poprawnie pogrupował dane, zliczając ilość ocen dla każdego przedmiotu oraz wyliczając średnią arytmetyczną z wartości bazowych (mean_base_grade). 
+
+Zastosowano wektoryzację operacji w bibliotece Pandas, zastępując powolne iterowanie po wierszach na rzecz szybkich masek logicznych.
