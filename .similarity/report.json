@@ -1,8 +1,8 @@
 {
-  "generated": "f99376db2d5bd9caa01796ceb5da54972bf2ef4b",
+  "generated": "9027bbadfb07247fde25a3ee5f88066eee8f8160",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 124,
+  "fileCount": 146,
   "pupilCount": 9,
   "skipped": [
     {
@@ -23,6 +23,11 @@
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
       "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "LYSAKOWSKI_NATANIEL/20_10_2026/main.py",
+      "pupil": "LYSAKOWSKI_NATANIEL",
       "chars": 0
     },
     {
@@ -47,6 +52,25 @@
     }
   ],
   "flagged": [
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KOWALCZYK_ADAM",
+        "path": "KOWALCZYK_ADAM/20_10_2026/librus_intelligence/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:23+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/20_10_2026/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:21+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2336
+    },
     {
       "sameCommit": false,
       "later": {
@@ -84,6 +108,25 @@
       "text": 0.9639,
       "struct": 0.9729,
       "chars": 397
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KOWALCZYK_ADAM",
+        "path": "KOWALCZYK_ADAM/20_10_2026/librus_intelligence/starter.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:23+02:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/20_10_2026/starter.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:21+02:00"
+      },
+      "jaccard": 0.6698,
+      "text": 0.9459,
+      "struct": 0.9324,
+      "chars": 2896
     },
     {
       "sameCommit": false,
@@ -206,6 +249,20 @@
     },
     {
       "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "LYSAKOWSKI_NATANIEL"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
+        "LYSAKOWSKI_NATANIEL/15_09_2026/exercise6.py"
+      ],
+      "jaccard": 0.4062,
+      "text": 0.8434,
+      "struct": 0.861,
+      "chars": 458
+    },
+    {
+      "pupils": [
         "KOWALCZYK_ADAM",
         "TUTKEVYCH_VOLODYMYR"
       ],
@@ -231,20 +288,6 @@
       "text": 0.8121,
       "struct": 0.8,
       "chars": 590
-    },
-    {
-      "pupils": [
-        "SHYBITSKY_OLEKSANDR",
-        "TUTKEVYCH_VOLODYMYR"
-      ],
-      "paths": [
-        "SHYBITSKY_OLEKSANDR/29_09_2026/ex1.py",
-        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
-      ],
-      "jaccard": 0.3643,
-      "text": 0.7787,
-      "struct": 0.7907,
-      "chars": 387
     }
   ]
 }
