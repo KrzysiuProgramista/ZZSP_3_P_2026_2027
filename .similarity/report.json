@@ -1,8 +1,8 @@
 {
-  "generated": "f99376db2d5bd9caa01796ceb5da54972bf2ef4b",
+  "generated": "627ef35d906cc1f8f505fe34c790f413c360316d",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 124,
+  "fileCount": 144,
   "pupilCount": 9,
   "skipped": [
     {
@@ -23,6 +23,11 @@
     {
       "path": "KLEPADLO_KRYSTIAN/08_09_2026/tests/__init__.py",
       "pupil": "KLEPADLO_KRYSTIAN",
+      "chars": 0
+    },
+    {
+      "path": "LYSAKOWSKI_NATANIEL/20_10_2026/main.py",
+      "pupil": "LYSAKOWSKI_NATANIEL",
       "chars": 0
     },
     {
@@ -206,6 +211,20 @@
     },
     {
       "pupils": [
+        "KLEPADLO_KRYSTIAN",
+        "LYSAKOWSKI_NATANIEL"
+      ],
+      "paths": [
+        "KLEPADLO_KRYSTIAN/15_09_2026/zadanie6.py",
+        "LYSAKOWSKI_NATANIEL/15_09_2026/exercise6.py"
+      ],
+      "jaccard": 0.4062,
+      "text": 0.8434,
+      "struct": 0.861,
+      "chars": 458
+    },
+    {
+      "pupils": [
         "KOWALCZYK_ADAM",
         "TUTKEVYCH_VOLODYMYR"
       ],
@@ -231,20 +250,6 @@
       "text": 0.8121,
       "struct": 0.8,
       "chars": 590
-    },
-    {
-      "pupils": [
-        "SHYBITSKY_OLEKSANDR",
-        "TUTKEVYCH_VOLODYMYR"
-      ],
-      "paths": [
-        "SHYBITSKY_OLEKSANDR/29_09_2026/ex1.py",
-        "TUTKEVYCH_VOLODYMYR/29_09_2026/Exercise/exercise1.py"
-      ],
-      "jaccard": 0.3643,
-      "text": 0.7787,
-      "struct": 0.7907,
-      "chars": 387
     }
   ]
 }
