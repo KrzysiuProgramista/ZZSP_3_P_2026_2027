@@ -1,8 +1,8 @@
 {
-  "generated": "f99376db2d5bd9caa01796ceb5da54972bf2ef4b",
+  "generated": "c869f8d506dfe320a19349fed4daed2546359b9b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 124,
+  "fileCount": 131,
   "pupilCount": 9,
   "skipped": [
     {
@@ -47,6 +47,25 @@
     }
   ],
   "flagged": [
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/20_10__2026/slide_16.py",
+        "assignment": "20_10__2026",
+        "added": "2026-10-20T17:20:02+02:00"
+      },
+      "earlier": {
+        "pupil": "WASIAK_FRANCISZEK",
+        "path": "WASIAK_FRANCISZEK/20_10_2026/ex1.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T16:22:35+02:00"
+      },
+      "jaccard": 0.6884,
+      "text": 0.9346,
+      "struct": 0.9581,
+      "chars": 386
+    },
     {
       "sameCommit": false,
       "later": {
