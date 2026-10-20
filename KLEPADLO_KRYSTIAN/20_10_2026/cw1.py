@@ -1,7 +1,7 @@
 import pandas as pd
-import io
+from io import StringIO
 
-csv_data = """Date,product,category,region,quantity,unit_price
+raw_sales_data = """Date,product,category,region,quantity,unit_price
 2026-01-05,Laptop,Electronics,North,3,3500.00
 2026-01-07,Mouse,Electronics,North,25,45.00
 2026-01-12,Desk,Furniture,South,5,890.00
@@ -21,22 +21,22 @@ csv_data = """Date,product,category,region,quantity,unit_price
 2026-04-23,Monitor,Electronics,West,6,1200.00
 2026-05-04,Desk,Furniture,North,2,890.00"""
 
-df = pd.read_csv(io.StringIO(csv_data))
+sales_df = pd.read_csv(StringIO(raw_sales_data))
 
 print("1. Quantity above 10:")
-print(df[df['quantity'] > 10])
+print(sales_df.query("quantity > 10"))
 
 print("\n2. All sales in the North region:")
-print(df[df['region'] == 'North'])
+print(sales_df.query("region == 'North'"))
 
 print("\n3. Electronics sold in the North:")
-print(df[(df['category'] == 'Electronics') & (df['region'] == 'North')])
+print(sales_df.query("category == 'Electronics' and region == 'North'"))
 
 print("\n4. Unit price from 400 to 1,500 inclusive:")
-print(df[df['unit_price'].between(400, 1500)])
+print(sales_df.query("400 <= unit_price <= 1500"))
 
 print("\n5. Everything except Electronics in the South:")
-print(df[~((df['category'] == 'Electronics') & (df['region'] == 'South'))])
+print(sales_df.query("not (category == 'Electronics' and region == 'South')"))
 
 print("\n6. Sales in North or East; quantity between 5 and 20:")
-print(df[df['region'].isin(['North', 'East']) & df['quantity'].between(5, 20)])
+print(sales_df.query("region in ['North', 'East'] and 5 <= quantity <= 20"))
