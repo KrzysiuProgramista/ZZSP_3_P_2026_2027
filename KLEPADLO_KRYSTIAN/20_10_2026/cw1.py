@@ -1,42 +1,56 @@
 import pandas as pd
-from io import StringIO
+import pytest
 
-raw_sales_data = """Date,product,category,region,quantity,unit_price
-2026-01-05,Laptop,Electronics,North,3,3500.00
-2026-01-07,Mouse,Electronics,North,25,45.00
-2026-01-12,Desk,Furniture,South,5,890.00
-2026-01-15,Laptop,Electronics,South,2,3500.00
-2026-01-19,Chair,Furniture,North,12,450.00
-2026-02-02,Monitor,Electronics,East,8,1200.00
-2026-02-08,Desk,Furniture,East,3,890.00
-2026-02-14,Mouse,Electronics,West,40,45.00
-2026-02-21,Laptop,Electronics,West,1,3500.00
-2026-03-03,Chair,Furniture,South,20,450.00
-2026-03-11,Monitor,Electronics,North,4,1200.00
-2026-03-18,Keyboard,Electronics,East,15,199.00
-2026-03-25,Desk,Furniture,West,7,890.00
-2026-04-02,Laptop,Electronics,North,5,3500.00
-2026-04-09,Chair,Furniture,East,9,450.00
-2026-04-16,Keyboard,Electronics,South,30,199.00
-2026-04-23,Monitor,Electronics,West,6,1200.00
-2026-05-04,Desk,Furniture,North,2,890.00"""
+def _validate_column(df: pd.DataFrame, column: str):
+    """Zgłasza ValueError, jeśli kolumna nie znajduje się w df.columns[span_0](start_span)[span_0](end_span)."""
+    if column not in df.columns:
+        raise ValueError(f"Kolumna '{column}' nie istnieje w DataFrame.")
 
-sales_df = pd.read_csv(StringIO(raw_sales_data))
+def filter_between(df: pd.DataFrame, column: str, low, high) -> pd.DataFrame:
+    """Zwraca wartości włącznie z podanym zakresem[span_1](start_span)[span_1](end_span)."""
+    _validate_column(df, column)
+    return df[df[column].between(low, high, inclusive='both')]
 
-print("1. Quantity above 10:")
-print(sales_df.query("quantity > 10"))
+def filter_by_values(df: pd.DataFrame, column: str, values: list) -> pd.DataFrame:
+    """Wykorzystuje metodę Series.isin(values) do filtrowania[span_2](start_span)[span_2](end_span)."""
+    _validate_column(df, column)
+    return df[df[column].isin(values)]
 
-print("\n2. All sales in the North region:")
-print(sales_df.query("region == 'North'"))
+def top_n(df: pd.DataFrame, column: str, n: int) -> pd.DataFrame:
+    """Zwraca n największych wierszy na podstawie sortowania[span_3](start_span)[span_3](end_span)."""
+    _validate_column(df, column)
+    return df.sort_values(by=column, ascending=False).head(n)
 
-print("\n3. Electronics sold in the North:")
-print(sales_df.query("category == 'Electronics' and region == 'North'"))
 
-print("\n4. Unit price from 400 to 1,500 inclusive:")
-print(sales_df.query("400 <= unit_price <= 1500"))
+# --- Testy jednostkowe pytest[span_4](start_span)[span_4](end_span) ---
 
-print("\n5. Everything except Electronics in the South:")
-print(sales_df.query("not (category == 'Electronics' and region == 'South')"))
+@pytest.fixture
+def sample_data():
+    return pd.DataFrame({
+        'quantity': [3, 25, 5, 12, 8, 40],
+        'region': ['North', 'North', 'South', 'North', 'East', 'West']
+    })
 
-print("\n6. Sales in North or East; quantity between 5 and 20:")
-print(sales_df.query("region in ['North', 'East'] and 5 <= quantity <= 20"))
+def test_filter_between(sample_data):
+    result = filter_between(sample_data, 'quantity', 5, 12)
+    assert len(result) == 2
+    assert list(result['quantity']) == [5, 12]
+    
+    with pytest.raises(ValueError):
+        filter_between(sample_data, 'nieistniejaca_kolumna', 1, 10)
+
+def test_filter_by_values(sample_data):
+    result = filter_by_values(sample_data, 'region', ['South', 'East'])
+    assert len(result) == 2
+    assert list(result['region']) == ['South', 'East']
+    
+    with pytest.raises(ValueError):
+        filter_by_values(sample_data, 'brak_kolumny', ['North'])
+        
+def test_top_n(sample_data):
+    result = top_n(sample_data, 'quantity', 2)
+    assert len(result) == 2
+    assert list(result['quantity']) == [40, 25]
+    
+    with pytest.raises(ValueError):
+        top_n(sample_data, 'test_kolumny', 2)
