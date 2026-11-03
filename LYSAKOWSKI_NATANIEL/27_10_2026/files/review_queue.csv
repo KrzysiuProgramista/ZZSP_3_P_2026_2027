@@ -1,0 +1,21 @@
+,id,order_date,product,category,region,quantity,price,channel,price_had_symbol,qty_issue,id_conflict,total,total_with_vat,is_bulk,priority,region_code,product_label,flag_invalid_date,flag_future_date,flag_missing_price,flag_invalid_quantity,flag_suspicious_quantity,flag_price_outlier,flag_price_currency_symbol,flag_id_conflict,review_reasons,needs_review
+3,ORD-0004,2026-10-14,Laptop Pro 14,Electronics,North,5,,Online,False,,False,,,False,unknown,N,Laptop Pro 14 x5,False,False,True,False,False,False,False,False,missing_price,True
+7,ORD-0008,2026-10-13,Monitor 27,Electronics,South,5,,Store,False,,False,,,False,unknown,S,Monitor 27 x5,False,False,True,False,False,False,False,False,missing_price,True
+12,ORD-0013,2026-08-06,USB-C Hub,Accessories,North,,123.41,Phone,False,blank,False,,,,unknown,N,USB-C Hub x?,False,False,False,True,False,False,False,False,invalid_quantity,True
+13,ORD-0014,,Headphones,Electronics,North,1,366.45,Phone,False,,False,366.45,450.73,False,low,N,Headphones x1,True,False,False,False,False,False,False,False,invalid_date,True
+17,ORD-0018,2026-09-18,Webcam HD,Electronics,East,8,,Store,False,,False,,,False,unknown,E,Webcam HD x8,False,False,True,False,False,False,False,False,missing_price,True
+21,ORD-0022,2026-09-27,Office Chair,Furniture,South,,759.05,Phone,False,zero,False,,,,unknown,S,Office Chair x?,False,False,False,True,False,False,False,False,invalid_quantity,True
+23,ORD-0024,2026-10-21,USB-C Hub,Accessories,South,3,1299.99,Phone,True,,False,3899.97,4796.96,False,medium,S,USB-C Hub x3,False,False,False,False,False,True,True,False,price_outlier; price_currency_symbol,True
+44,ORD-0045,2026-08-03,Wireless Mouse,Accessories,South,12,,Phone,False,,False,,,True,unknown,S,Wireless Mouse x12,False,False,True,False,False,False,False,False,missing_price,True
+51,ORD-0052,2026-08-02,Office Chair,Furniture,East,12,,Phone,False,,False,,,True,unknown,E,Office Chair x12,False,False,True,False,False,False,False,False,missing_price,True
+57,ORD-0058,2026-08-03,Wireless Mouse,Electronics,North,12,331.55,Phone,False,,False,3978.6,4893.68,True,medium,N,Wireless Mouse x12,False,False,False,False,False,True,False,False,price_outlier,True
+61,ORD-0062,,Notebook Pack,Stationery,South,20,27.39,Phone,False,,False,547.8,673.79,True,low,S,Notebook Pack x20,True,False,False,False,False,False,False,False,invalid_date,True
+66,ORD-0067,2026-10-03,USB-C Hub,Accessories,North,2,349.0,Online,True,,False,698.0,858.54,False,low,N,USB-C Hub x2,False,False,False,False,False,True,True,False,price_outlier; price_currency_symbol,True
+68,ORD-0069,2026-09-01,Monitor 27,Electronics,South,25,1099.0,Online,False,,False,27475.0,33794.25,True,high,S,Monitor 27 x25,False,False,False,False,True,False,False,False,suspicious_quantity,True
+72,ORD-0073,2026-09-19,Standing Desk,Furniture,East,,1699.0,Online,False,blank,False,,,,unknown,E,Standing Desk x?,False,False,False,True,False,False,False,False,invalid_quantity,True
+76,ORD-0077,2026-08-01,Monitor 27,Electronics,West,25,1299.99,Phone,True,,False,32499.75,39974.69,True,high,W,Monitor 27 x25,False,False,False,False,True,False,True,False,suspicious_quantity; price_currency_symbol,True
+88,ORD-0089,2026-10-16,Whiteboard,Stationery,East,5,,Store,False,,False,,,False,unknown,E,Whiteboard x5,False,False,True,False,False,False,False,False,missing_price,True
+90,ORD-0091,2027-12-05,Notebook Pack,Stationery,West,1,23.65,Online,False,,False,23.65,29.09,False,low,W,Notebook Pack x1,False,True,False,False,False,False,False,False,future_date,True
+93,ORD-0094,2026-08-12,Office Chair,Furniture,South,,759.05,Store,False,negative,False,,,,unknown,S,Office Chair x?,False,False,False,True,False,False,False,False,invalid_quantity,True
+111,ORD-0040,2026-10-27,Laptop Pro 14,Electronics,East,2,5224.05,Phone,False,,True,10448.1,12851.16,False,high,E,Laptop Pro 14 x2,False,False,False,False,False,False,False,True,id_conflict,True
+119,ORD-0120,2026-08-14,Office Chair,Furniture,East,25,759.05,Online,False,,False,18976.25,23340.79,True,high,E,Office Chair x25,False,False,False,False,True,False,False,False,suspicious_quantity,True
