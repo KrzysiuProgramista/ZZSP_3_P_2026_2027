@@ -1,42 +1,88 @@
 import pandas as pd
-import io
+import pytest
 
-csv_data = """Date,product,category,region,quantity,unit_price
-2026-01-05,Laptop,Electronics,North,3,3500.00
-2026-01-07,Mouse,Electronics,North,25,45.00
-2026-01-12,Desk,Furniture,South,5,890.00
-2026-01-15,Laptop,Electronics,South,2,3500.00
-2026-01-19,Chair,Furniture,North,12,450.00
-2026-02-02,Monitor,Electronics,East,8,1200.00
-2026-02-08,Desk,Furniture,East,3,890.00
-2026-02-14,Mouse,Electronics,West,40,45.00
-2026-02-21,Laptop,Electronics,West,1,3500.00
-2026-03-03,Chair,Furniture,South,20,450.00
-2026-03-11,Monitor,Electronics,North,4,1200.00
-2026-03-18,Keyboard,Electronics,East,15,199.00
-2026-03-25,Desk,Furniture,West,7,890.00
-2026-04-02,Laptop,Electronics,North,5,3500.00
-2026-04-09,Chair,Furniture,East,9,450.00
-2026-04-16,Keyboard,Electronics,South,30,199.00
-2026-04-23,Monitor,Electronics,West,6,1200.00
-2026-05-04,Desk,Furniture,North,2,890.00"""
+def _validate_column(df: pd.DataFrame, column: str):
+    """Zgłasza ValueError, jeśli kolumna nie znajduje się w df.columns[span_0](start_span)[span_0](end_span)."""
+    if column not in df.columns:
+        raise ValueError(f"Kolumna '{column}' nie istnieje w DataFrame.")
 
-df = pd.read_csv(io.StringIO(csv_data))
+def filter_between(df: pd.DataFrame, column: str, low, high) -> pd.DataFrame:
+    """Zwraca wartości włącznie z podanym zakresem[span_1](start_span)[span_1](end_span)."""
+    _validate_column(df, column)
+    return df[df[column].between(low, high, inclusive='both')]
 
-print("1. Quantity above 10:")
-print(df[df['quantity'] > 10])
+def filter_by_values(df: pd.DataFrame, column: str, values: list) -> pd.DataFrame:
+    """Wykorzystuje metodę Series.isin(values) do filtrowania[span_2](start_span)[span_2](end_span)."""
+    _validate_column(df, column)
+    return df[df[column].isin(values)]
 
-print("\n2. All sales in the North region:")
-print(df[df['region'] == 'North'])
+def top_n(df: pd.DataFrame, column: str, n: int) -> pd.DataFrame:
+    """Zwraca n największych wierszy na podstawie sortowania[span_3](start_span)[span_3](end_span)."""
+    _validate_column(df, column)
+    return df.sort_values(by=column, ascending=False).head(n)
 
-print("\n3. Electronics sold in the North:")
-print(df[(df['category'] == 'Electronics') & (df['region'] == 'North')])
 
-print("\n4. Unit price from 400 to 1,500 inclusive:")
-print(df[df['unit_price'].between(400, 1500)])
+# --- Testy jednostkowe pytest[span_4](start_span)[span_4](end_span) ---
 
-print("\n5. Everything except Electronics in the South:")
-print(df[~((df['category'] == 'Electronics') & (df['region'] == 'South'))])
+@pytest.fixture
+def sample_data():
+    return pd.DataFrame({
+        'quantity': [3, 25, 5, 12, 8, 40],
+        'region': ['North', 'North', 'South', 'North', 'East', 'West']
+    })
 
-print("\n6. Sales in North or East; quantity between 5 and 20:")
-print(df[df['region'].isin(['North', 'East']) & df['quantity'].between(5, 20)])
+def test_filter_between(sample_data):
+    result = filter_between(sample_data, 'quantity', 5, 12)
+    assert len(result) == 2
+    assert list(result['quantity']) == [5, 12]
+    
+    with pytest.raises(ValueError):
+        filter_between(sample_data, 'nieistniejaca_kolumna', 1, 10)
+
+def test_filter_by_values(sample_data):
+    result = filter_by_values(sample_data, 'region', ['South', 'East'])
+    assert len(result) == 2
+    assert list(result['region']) == ['South', 'East']
+    
+    with pytest.raises(ValueError):
+        filter_by_values(sample_data, 'brak_kolumny', ['North'])
+
+def test_top_n(sample_data):
+    result = top_n(sample_data, 'quantity', 2)
+    assert len(result) == 2
+    assert list(result['quantity']) == [40, 25]
+    
+    with pytest.raises(ValueError):
+        top_n(sample_data, 'test_kolumny', 2)
+
+# Chellange
+
+def report(df: pd.DataFrame, **filters) -> pd.DataFrame:
+    """Tworzy raport akceptujący dowolną liczbę filtrów column=value[span_0](start_span)[span_0](end_span)."""
+    
+    # 1. Walidacja każdej żądanej kolumny[span_1](start_span)[span_1](end_span)
+    for column in filters.keys():
+        if column not in df.columns:
+            # Zgłoszenie błędu ValueError w przypadku nieznanej kolumny[span_2](start_span)[span_2](end_span)
+            raise ValueError(f"Nieznana kolumna: '{column}'")
+
+    filtered_df = df.copy()
+    
+    # 2. Aplikacja wszystkich filtrów (logika AND)[span_3](start_span)[span_3](end_span)
+    for column, value in filters.items():
+        # Wiersz musi pasować do każdej dostarczonej pary column=value[span_4](start_span)[span_4](end_span)
+        filtered_df = filtered_df[filtered_df[column] == value]
+
+    # 3. Wypisanie dopasowanych wierszy / całkowitej liczby wierszy[span_5](start_span)[span_5](end_span)
+    print(f"Matched rows / Total rows: {len(filtered_df)} / {len(df)}")
+
+    # 4. Wypisanie całkowitej wartości dopasowanej sprzedaży[span_6](start_span)[span_6](end_span)
+    # Definicja całkowitej wartości: quantity * unit_price[span_7](start_span)[span_7](end_span)
+    if 'quantity' in df.columns and 'unit_price' in df.columns:
+        total_value = (filtered_df['quantity'] * filtered_df['unit_price']).sum()
+    else:
+        total_value = 0.0
+    print(f"Total value of matching sales: {total_value:.2f}")
+
+    # 5. Zwrócenie przefiltrowanego obiektu DataFrame[span_8](start_span)[span_8](end_span)
+    return filtered_df
