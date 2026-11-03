@@ -1,0 +1,121 @@
+id,order_date,product,category,region,quantity,price,channel
+ORD-0001,19.09.2026,Office Chair,Furniture,East,2,799.00,Phone
+ORD-0002,02.08.2026,Laptop Pro 14,Electronics,South,2,6048.90,Phone
+ORD-0003,20.08.2026,Wireless Mouse,Accessories,East,2,39.99,Online
+ORD-0004,14.10.2026,Laptop Pro 14,Electronics,North,5,,Online
+ORD-0005,28.08.2026,Notebook Pack,Stationery,North,1,24.90,Phone
+ORD-0006,11.10.2026,Webcam HD,Electronics, north ,5,219.50,Online
+ORD-0007,07.08.2026,Mechanical Keyboard,Accessories,East,20,249.00,Store
+ORD-0008,13.10.2026,Monitor 27,Electronics,South,5,unknown,Store
+ORD-0009,14.08.2026,Wireless Mouse,Accessories,North,2,39.99,Store
+ORD-0010,20.09.2026,Wireless Mouse,Accessories,South,5,41.99,Online
+ORD-0011,21.09.2026,Mechanical Keyboard,Accessories,West,1,261.45,Phone
+ORD-0012,02.08.2026,Headphones,Electronics,West,2,331.55,Store
+ORD-0013,06.08.2026,USB-C Hub,Accessories,North,,123.41,Phone
+ORD-0014,31.02.2026,Headphones,Electronics,North,1,366.45,Phone
+ORD-0015,31.08.2026,Desk Lamp,Furniture,South,2,113.91,Store
+ORD-0016,27.09.2026,Webcam HD,Electronics,North,5,230.48,Phone
+ORD-0017,05.09.2026, laptop pro 14 ,Electronics,West,3,5499.00,Phone
+ORD-0018,18.09.2026,Webcam HD,Electronics,East,8,,Store
+ORD-0019,22.08.2026,Headphones,Electronics,South,1,383.90,Online
+ORD-0020,09.08.2026,Monitor 27,electronics,South,1,1099.00,Phone
+ORD-0021,12.09.2026,Notebook Pack,Stationery,North,5,26.14,Online
+ORD-0022,27.09.2026,Office Chair,Furniture,South,0,759.05,Phone
+ORD-0023,04.09.2026,Standing Desk,Furniture,East,2,1699.00,Online
+ORD-0024,21.10.2026,USB-C Hub,Accessories,South,3,"$1,299.99",Phone
+ORD-0025,22.09.2026,Desk Lamp,Furniture,North,5,119.90,Online
+ORD-0026,28.08.2026,Desk Lamp,Furniture,West,5,119.90,Store
+ORD-0027,18.10.2026,Laptop Pro 14,Electronics,South,1,5773.95,Online
+ORD-0028,23.09.2026,Headphones,Electronics,East,2,383.90,Store
+ORD-0029,13.08.2026,Standing Desk,Furniture,NORTH,5,1699.00,Phone
+ORD-0030,30.09.2026,Standing Desk,Furniture,East,1,1699.00,Online
+ORD-0031,18.09.2026,Monitor 27,Electronics,North,3,1208.90,Phone
+ORD-0032,04.08.2026,Headphones,Electronics,South,five,383.90,Store
+ORD-0033,14.10.2026,Standing Desk,Furniture,South,2,1699.00,Store
+ORD-0034,05.10.2026,Wireless Mouse,Accessories,West,1,43.99,Online
+ORD-0035,18.09.2026,Wireless Mouse,Accessories,North,5,43.99,Online
+ORD-0036,07.10.2026,Laptop Pro 14,Electronics,South,5,6048.90,Store
+ORD-0037,11.09.2026,Headphones,Electronics,South,1,383.90,Store
+ORD-0038,25.08.2026,Mechanical Keyboard,Accessories,East,3,236.55,Online
+ORD-0039,03.08.2026,Laptop Pro 14,Electronics,East,3,5773.95,Online
+ORD-0040,09.10.2026,Laptop Pro 14,Electronics,East,2,5224.05,Phone
+ORD-0041,05.10.2026,Standing Desk,Furniture,South,8,1699.00,Online
+ORD-0042,21.08.2026,Mechanical Keyboard,Accessories,West,2,249.00,Online
+ORD-0043,09.08.2026,Laptop Pro 14,Accessories ,North,1,5224.05,Store
+ORD-0044,11.09.2026,Laptop Pro 14,Electronics,North,12,5499.00,Online
+ORD-0045,03.08.2026,Wireless Mouse,Accessories,South,12,,Phone
+ORD-0046,14.09.2026,Laptop Pro 14,Electronics,South,3,5499.00,Store
+ORD-0047,01.10.2026,Desk Lamp,Furniture,East,8,125.90,Phone
+ORD-0048,13.10.2026,Whiteboard,Stationery,South,5,189.00,Online
+ORD-0049,07.08.2026,Wireless Mouse,Accessories,South,8,43.99,Phone
+ORD-0050,07.09.2026,Webcam HD,Electronics,East,2,219.50,Store
+ORD-0051,13.10.2026,Mechanical Keyboard,Accessories,East,1,249.00,Online
+ORD-0052,02.08.2026,Office Chair,Furniture,East,12,unknown,Phone
+ORD-0053,16.10.2026,Monitor 27,Electronics,West,2,1153.95,Store
+ORD-0054,08.08.2026,Whiteboard,Stationery,East,1,189.00,Phone
+ORD-0055,23.09.2026,Webcam HD,Electronics,North,1,230.48,Phone
+ORD-0056,19.10.2026,Notebook Pack,Stationery,North,3,26.14,Phone
+ORD-0057,24.10.2026,Mechanical Keyboard,Accessories,North,5,261.45,Phone
+ORD-0058,03.08.2026,WIRELESS MOUSE,Electronics,North,12,331.55,Phone
+ORD-0059,19.09.2026,Notebook Pack,Stationery,East,2,26.14,Online
+ORD-0060,22.10.2026,USB-C Hub,Accessories,North,5,142.89,Phone
+ORD-0061,26.08.2026,Office Chair,Furniture,East,2,838.95,Phone
+ORD-0062,31.02.2026,Notebook Pack,Stationery,South,20,27.39,Phone
+ORD-0063,21.10.2026,Headphones,Electronics,East,2,349.00,Store
+ORD-0064,01.09.2026,Standing Desk,Furniture,South,3,1614.05,Online
+ORD-0065,12.08.2026,Wireless Mouse,Accessories,East,8,37.99,Store
+ORD-0066,17.08.2026,Monitor 27,Electronics,East,20,1099.00,Online
+ORD-0067,03.10.2026,USB-C Hub,Accessories,North,2,"€ 349,00",Online
+ORD-0068,15.09.2026,Mechanical Keyboard,Accessories,South,3,236.55,Online
+ORD-0069,01.09.2026,Monitor 27,Electronics,south,25,1099.00,Online
+ORD-0070,09.08.2026,Laptop Pro 14,Electronics,South,1,5499.00,Phone
+ORD-0071,02.09.2026,Standing Desk,Furniture,West,2,1699.00,Online
+ORD-0072,23.09.2026,Laptop Pro 14,Electronics,West,1,6048.90,Store
+ORD-0073,19.09.2026,Standing Desk,Furniture,East,,1699.00,Online
+ORD-0074,07.09.2026,Mechanical Keyboard,Accessories,West,1,249.00,Store
+ORD-0075,10.09.2026,Standing Desk,Furniture,South,12,1783.95,Online
+ORD-0076,07.09.2026,Webcam HD,Electronics,East,1,241.45,Store
+ORD-0077,01.08.2026,Monitor 27,Electronics,West,25,"$1,299.99",Phone
+ORD-0078,09.08.2026,Whiteboard,Stationery,West,5,198.45,Online
+ORD-0079,20.08.2026,Headphones,Electronics,West,1,366.45,Phone
+ORD-0080,03.08.2026,USB-C Hub,Accessories,West,3,123.41,Phone
+ORD-0081,21.09.2026,Monitor 27,Electronics,South,1,1099.00,Phone
+ORD-0082,05.09.2026,Office Chair,electronics,West,12,799.00,Online
+ORD-0083,26.08.2026,Office Chair,Furniture,East,8,799.00,Online
+ORD-0084,05.08.2026,Whiteboard,Stationery,East,5,189.00,Phone
+ORD-0085,07.08.2026,Office Chair,Furniture,West,5,838.95,Store
+ORD-0086,26.09.2026,Laptop Pro 14,Electronics,South,20,6048.90,Store
+ORD-0087,01.10.2026,Office Chair,Furniture,North,8,799.00,Online
+ORD-0088,08.08.2026,Monitor 27,Electronics,East,1,1044.05,Phone
+ORD-0089,16.10.2026,Whiteboard,Stationery,East,5,,Store
+ORD-0090,17.09.2026,Webcam HD,Electronics,South,8,219.50,Online
+ORD-0091,05.12.2027,Notebook Pack,Stationery,West,1,23.65,Online
+ORD-0092,17.08.2026,Mechanical Keyboard,Accessories,North,5,261.45,Phone
+ORD-0093,21.08.2026,Headphones,Electronics,West,5,383.90,Phone
+ORD-0094,12.08.2026,Office Chair,Furniture,South,-3,759.05,Store
+ORD-0095,24.08.2026,Whiteboard,Stationery,North,1,189.00,Phone
+ORD-0096,07.08.2026,Office Chair,Furniture,North,8,799.00,Online
+ORD-0097,21.09.2026,Wireless Mouse,Accessories,East,3,37.99,Online
+ORD-0098,08.08.2026,Desk Lamp,Furniture,South,20,119.90,Store
+ORD-0099,29.09.2026,Laptop Pro 14,Electronics,West,8,5224.05,Store
+ORD-0100,09.08.2026,Monitor 27,Electronics,North,2,1044.05,Store
+ORD-0101,06.10.2026,Standing Desk,Furniture,West,5,1868.90,Store
+ORD-0102,21.10.2026,Monitor 27,Electronics,East,2,1044.05,Online
+ORD-0103,19.10.2026,Headphones,Electronics,South,5,366.45,Store
+ORD-0104,23.10.2026,Notebook Pack,Stationery,South,1,26.14,Phone
+ORD-0105,21.10.2026,desk LAMP,Accessories,North,3,123.41,Online
+ORD-0106,27.09.2026,Laptop Pro 14,Electronics,North,1,5499.00,Phone
+ORD-0107,29.08.2026,Laptop Pro 14,Electronics,North,2,6048.90,Store
+ORD-0108,17.10.2026,Whiteboard,Stationery,West,1,189.00,Store
+ORD-0109,07.08.2026,Headphones,Electronics,North,3,366.45,Store
+ORD-0110,18.10.2026,Desk Lamp,Furniture,East,1,131.89,Online
+ORD-0026,28.08.2026,Desk Lamp,Furniture,West,5,119.90,Store
+ORD-0040,27.10.2026,Laptop Pro 14,Electronics,East,2,5224.05,Phone
+ORD-0113,11.08.2026,Monitor 27,Electronics,East,5,1099.00,Phone
+ORD-0114,17.08.2026,Monitor 27,Electronics,South,1,1044.05,Store
+ORD-0115,28.08.2026,Whiteboard,Stationery,East,8,189.00,Phone
+ORD-0116,17.10.2026,USB-C Hub,Accessories,North,12,142.89,Store
+ORD-0117,03.08.2026,Standing Desk,Furniture,West,3,1699.00,Phone
+ORD-0118,15.08.2026,Wireless Mouse,Accessories,West,8,43.99,Phone
+ORD-0119,16.10.2026,Headphones,Electronics,North,2,331.55,Phone
+ORD-0120,14.08.2026,Office Chair,Furniture,East,25,759.05,Online
