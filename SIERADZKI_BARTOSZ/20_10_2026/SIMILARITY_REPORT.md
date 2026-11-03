@@ -4,11 +4,12 @@ This file was written automatically by the `similarity` GitHub Action.
 It is **not** a decision or an accusation - it flags work for your
 teacher to look at, and your teacher decides what it means.
 
-Pupil folder: `KLEPADLO_KRYSTIAN`
+Pupil folder: `SIERADZKI_BARTOSZ`
 
 | your file | similarity | length |
 |---|---|---|
-| `KLEPADLO_KRYSTIAN/20_10_2026/cw1.py` | **100%** | 518 chars |
+| `SIERADZKI_BARTOSZ/20_10_2026/inspect_librus_pdf.py` | **100%** | 2336 chars |
+| `SIERADZKI_BARTOSZ/20_10_2026/inspect_librus_pdf.py` | **100%** | 2336 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

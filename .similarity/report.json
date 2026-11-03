@@ -1,8 +1,8 @@
 {
-  "generated": "b31d1f1afbd595afe3bb2e21ff88737e661d951d",
+  "generated": "0f2612adfcdf7acc1d9659cb261296bac567ce98",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 169,
+  "fileCount": 202,
   "pupilCount": 9,
   "skipped": [
     {
@@ -70,6 +70,44 @@
         "path": "KLEPADLO_KRYSTIAN/20_10_2026/inspect_librus_pdf.py",
         "assignment": "20_10_2026",
         "added": "2026-10-20T17:58:21+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2336
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SIERADZKI_BARTOSZ",
+        "path": "SIERADZKI_BARTOSZ/20_10_2026/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-11-03T15:54:16+01:00"
+      },
+      "earlier": {
+        "pupil": "KLEPADLO_KRYSTIAN",
+        "path": "KLEPADLO_KRYSTIAN/20_10_2026/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:21+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2336
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SIERADZKI_BARTOSZ",
+        "path": "SIERADZKI_BARTOSZ/20_10_2026/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-11-03T15:54:16+01:00"
+      },
+      "earlier": {
+        "pupil": "KOWALCZYK_ADAM",
+        "path": "KOWALCZYK_ADAM/20_10_2026/librus_intelligence/inspect_librus_pdf.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T17:58:23+02:00"
       },
       "jaccard": 1.0,
       "text": 1.0,
