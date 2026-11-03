@@ -1,0 +1,25 @@
+csv_line,id,order_date,product,region,quantity,price,total,review_reason
+5,ORD-0004,2026-10-14,Laptop Pro 14,North,5,,,missing_price
+9,ORD-0008,2026-10-13,Monitor 27,South,5,,,missing_price
+14,ORD-0013,2026-08-06,USB-C Hub,North,,123.41,,missing_quantity
+15,ORD-0014,,Headphones,North,1,366.45,366.45,invalid_date
+19,ORD-0018,2026-09-18,Webcam HD,East,8,,,missing_price
+23,ORD-0022,2026-09-27,Office Chair,South,,759.05,,missing_quantity; quantity_non_positive
+25,ORD-0024,2026-10-21,USB-C Hub,South,3,1299.99,3899.9700000000003,price_currency_symbol; price_outlier
+33,ORD-0032,2026-08-04,Headphones,South,5,383.9,1919.5,quantity_was_text
+44,ORD-0043,2026-08-09,Laptop Pro 14,North,1,5224.05,5224.05,category_mismatch
+46,ORD-0045,2026-08-03,Wireless Mouse,South,12,,,missing_price
+53,ORD-0052,2026-08-02,Office Chair,East,12,,,missing_price
+59,ORD-0058,2026-08-03,Wireless Mouse,North,12,331.55,3978.6000000000004,price_outlier; category_mismatch
+63,ORD-0062,,Notebook Pack,South,20,27.39,547.8,invalid_date
+68,ORD-0067,2026-10-03,USB-C Hub,North,2,349.0,698.0,price_currency_symbol; price_outlier
+70,ORD-0069,2026-09-01,Monitor 27,South,25,1099.0,27475.0,suspicious_quantity
+74,ORD-0073,2026-09-19,Standing Desk,East,,1699.0,,missing_quantity
+78,ORD-0077,2026-08-01,Monitor 27,West,25,1299.99,32499.75,price_currency_symbol; suspicious_quantity
+83,ORD-0082,2026-09-05,Office Chair,West,12,799.0,9588.0,category_mismatch
+90,ORD-0089,2026-10-16,Whiteboard,East,5,,,missing_price
+92,ORD-0091,2027-12-05,Notebook Pack,West,1,23.65,23.65,future_date
+95,ORD-0094,2026-08-12,Office Chair,South,,759.05,,missing_quantity; quantity_non_positive
+106,ORD-0105,2026-10-21,Desk Lamp,North,3,123.41,370.23,category_mismatch
+113,ORD-0040,2026-10-27,Laptop Pro 14,East,2,5224.05,10448.1,conflicting_id
+121,ORD-0120,2026-08-14,Office Chair,East,25,759.05,18976.25,suspicious_quantity
