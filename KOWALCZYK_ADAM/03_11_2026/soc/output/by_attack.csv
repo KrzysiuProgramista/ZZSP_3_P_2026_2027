@@ -1,0 +1,8 @@
+attack_type,incidents,unique_source_ips,avg_response_min,blocked_rate_pct,compromise_rate_pct
+Brute Force,170,43,36.9,69.4,6.5
+Phishing,139,38,30.5,67.6,6.5
+DDoS,95,39,33.6,49.5,20.0
+SQL Injection,89,35,31.2,64.0,13.5
+Credential Stuffing,79,36,29.8,69.6,3.8
+Port Scan,77,33,37.4,62.3,9.1
+Malware,71,32,27.2,59.2,12.7
