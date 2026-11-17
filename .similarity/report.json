@@ -175,6 +175,25 @@
       "sameCommit": false,
       "later": {
         "pupil": "TUTKEVYCH_VOLODYMYR",
+        "path": "TUTKEVYCH_VOLODYMYR/20_10__2026/slide_16.py",
+        "assignment": "20_10__2026",
+        "added": "2026-10-20T17:20:02+02:00"
+      },
+      "earlier": {
+        "pupil": "WASIAK_FRANCISZEK",
+        "path": "WASIAK_FRANCISZEK/20_10_2026/ex1.py",
+        "assignment": "20_10_2026",
+        "added": "2026-10-20T16:22:35+02:00"
+      },
+      "jaccard": 0.6884,
+      "text": 0.9346,
+      "struct": 0.9581,
+      "chars": 386
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "TUTKEVYCH_VOLODYMYR",
         "path": "TUTKEVYCH_VOLODYMYR/15_09_2026/ex04_inspect.py",
         "assignment": "15_09_2026",
         "added": "2026-09-19T17:52:41+02:00"
