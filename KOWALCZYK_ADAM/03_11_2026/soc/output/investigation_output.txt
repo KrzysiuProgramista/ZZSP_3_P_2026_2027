@@ -1,0 +1,178 @@
+
+--- shape / dtypes ---
+(720, 17)
+incident_id                     str
+timestamp            datetime64[us]
+source_ip                       str
+source_country                  str
+target_asset                    str
+attack_type                     str
+severity                        str
+severity_score                int64
+response_time_min           float64
+packets                       int64
+bytes_transferred             int64
+blocked                        bool
+compromised                    bool
+analyst                         str
+event_date                   object
+hour                          int32
+weekday                         str
+dtype: object
+
+--- missing values ---
+incident_id          0
+timestamp            0
+source_ip            0
+source_country       0
+target_asset         0
+attack_type          0
+severity             0
+severity_score       0
+response_time_min    0
+packets              0
+bytes_transferred    0
+blocked              0
+compromised          0
+analyst              0
+event_date           0
+hour                 0
+weekday              0
+
+--- duplicate incident_id ---
+0
+
+--- profile ---
+{'rows': 720, 'from': Timestamp('2026-09-01 00:37:00'), 'to': Timestamp('2026-09-30 21:28:00'), 'attack_types': 7, 'countries': 8, 'assets': 7, 'unique_ips': 48}
+
+--- Q1-4 attack summary ---
+           attack_type  incidents  unique_source_ips  avg_response_min  median_response_min  blocked_rate_pct  compromise_rate_pct
+0          Brute Force        170                 43              36.9                 36.8              69.4                  6.5
+1             Phishing        139                 38              30.5                 28.9              67.6                  6.5
+2                 DDoS         95                 39              33.6                 31.9              49.5                 20.0
+3        SQL Injection         89                 35              31.2                 28.0              64.0                 13.5
+4  Credential Stuffing         79                 36              29.8                 27.5              69.6                  3.8
+5            Port Scan         77                 33              37.4                 36.3              62.3                  9.1
+6              Malware         71                 32              27.2                 25.9              59.2                 12.7
+
+--- Q5 highest compromise rate ---
+attack_type            DDoS
+compromise_rate_pct    20.0
+
+--- Q6 countries ---
+source_country
+United States     182
+China             111
+Brazil             86
+Germany            84
+Russia             77
+Netherlands        66
+India              62
+United Kingdom     52
+
+--- Q7 assets ---
+target_asset
+Web Server         179
+VPN Gateway        117
+Employee Laptop    116
+Mail Gateway       116
+API Server          91
+Database            80
+File Server         21
+
+--- Q8 asset exposure ---
+                 incidents  critical_emergency  avg_response_min
+target_asset                                                    
+API Server              91                  29              32.5
+Database                80                  35              30.8
+Employee Laptop        116                  30              31.7
+File Server             21                  10              31.3
+Mail Gateway           116                  38              32.4
+VPN Gateway            117                  30              32.6
+Web Server             179                  55              35.3
+
+--- Q9 MultiIndex (top 5) ---
+source_country  attack_type
+United States   Phishing       45
+                Brute Force    45
+China           Brute Force    32
+United States   DDoS           23
+                Malware        21
+
+--- Q9 flattened (top 5) ---
+  source_country  attack_type  incidents
+0  United States     Phishing         45
+1  United States  Brute Force         45
+2          China  Brute Force         32
+3  United States         DDoS         23
+4  United States      Malware         21
+
+--- Q10 by hour ---
+hour
+0     22
+1     36
+2     32
+3     26
+4     27
+5     43
+6     33
+7     29
+8     30
+9     33
+10    30
+11    28
+12    25
+13    29
+14    28
+15    31
+16    31
+17    33
+18    32
+19    30
+20    35
+21    25
+22    27
+23    25
+
+--- Q11 avg severity by weekday ---
+weekday
+Monday       3.232
+Saturday     2.989
+Friday       2.955
+Wednesday    2.936
+Sunday       2.916
+Thursday     2.901
+Tuesday      2.901
+
+--- Q12 busiest day ---
+2026-09-13 with 34 incidents
+
+--- Q13-15 context columns ---
+  incident_id          attack_type  attack_avg_response  response_vs_attack_avg  above_attack_avg_severity
+0    INC-0001          Brute Force            36.886101               -9.686101                       True
+1    INC-0002            Port Scan            37.425808                1.174192                      False
+2    INC-0003        SQL Injection            31.155531               -3.155531                       True
+3    INC-0004  Credential Stuffing            29.817555               12.982445                       True
+4    INC-0005             Phishing            30.466257               -0.466257                       True
+
+--- Q16 filter >=80 ---
+rows 720 -> 699; assets kept: ['API Server', 'Database', 'Employee Laptop', 'Mail Gateway', 'VPN Gateway', 'Web Server']
+
+--- Q17 top 2 attack types per country ---
+source_country attack_type  incidents  rank
+        Brazil Brute Force         16   1.0
+        Brazil        DDoS         14   2.0
+         China Brute Force         32   1.0
+         China    Phishing         17   2.0
+       Germany Brute Force         18   1.0
+       Germany   Port Scan         15   2.0
+         India Brute Force         15   1.0
+         India        DDoS         13   2.0
+   Netherlands    Phishing         15   1.0
+   Netherlands Brute Force         13   2.0
+        Russia Brute Force         20   1.0
+        Russia    Phishing         12   2.0
+United Kingdom    Phishing         14   1.0
+United Kingdom Brute Force         11   2.0
+ United States Brute Force         45   1.0
+ United States    Phishing         45   2.0

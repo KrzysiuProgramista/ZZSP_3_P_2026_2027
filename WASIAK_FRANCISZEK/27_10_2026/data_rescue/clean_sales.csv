@@ -1,0 +1,119 @@
+id,order_date,product,category,region,quantity,price,channel,price_foreign_symbol,date_future,id_conflict,price_outlier,total,total_with_vat,is_bulk,priority,region_code,product_label,needs_review
+ORD-0001,2026-09-19,Office Chair,Furniture,East,2,799.0,Phone,False,False,False,False,1598.0,1965.54,False,medium,E,Office Chair x2,False
+ORD-0002,2026-08-02,Laptop Pro 14,Electronics,South,2,6048.9,Phone,False,False,False,False,12097.8,14880.293999999998,False,high,S,Laptop Pro 14 x2,False
+ORD-0003,2026-08-20,Wireless Mouse,Accessories,East,2,39.99,Online,False,False,False,False,79.98,98.3754,False,low,E,Wireless Mouse x2,False
+ORD-0004,2026-10-14,Laptop Pro 14,Electronics,North,5,,Online,False,False,False,False,,,False,unknown,N,Laptop Pro 14 x5,True
+ORD-0005,2026-08-28,Notebook Pack,Stationery,North,1,24.9,Phone,False,False,False,False,24.9,30.627,False,low,N,Notebook Pack x1,False
+ORD-0006,2026-10-11,Webcam HD,Electronics,North,5,219.5,Online,False,False,False,False,1097.5,1349.925,False,medium,N,Webcam HD x5,False
+ORD-0007,2026-08-07,Mechanical Keyboard,Accessories,East,20,249.0,Store,False,False,False,False,4980.0,6125.4,True,medium,E,Mechanical Keyboard x20,False
+ORD-0008,2026-10-13,Monitor 27,Electronics,South,5,,Store,False,False,False,False,,,False,unknown,S,Monitor 27 x5,True
+ORD-0009,2026-08-14,Wireless Mouse,Accessories,North,2,39.99,Store,False,False,False,False,79.98,98.3754,False,low,N,Wireless Mouse x2,False
+ORD-0010,2026-09-20,Wireless Mouse,Accessories,South,5,41.99,Online,False,False,False,False,209.95000000000002,258.23850000000004,False,low,S,Wireless Mouse x5,False
+ORD-0011,2026-09-21,Mechanical Keyboard,Accessories,West,1,261.45,Phone,False,False,False,False,261.45,321.58349999999996,False,low,W,Mechanical Keyboard x1,False
+ORD-0012,2026-08-02,Headphones,Electronics,West,2,331.55,Store,False,False,False,False,663.1,815.613,False,low,W,Headphones x2,False
+ORD-0013,2026-08-06,USB-C Hub,Accessories,North,,123.41,Phone,False,False,False,False,,,False,unknown,N,USB-C Hub x?,True
+ORD-0014,,Headphones,Electronics,North,1,366.45,Phone,False,False,False,False,366.45,450.7335,False,low,N,Headphones x1,True
+ORD-0015,2026-08-31,Desk Lamp,Furniture,South,2,113.91,Store,False,False,False,False,227.82,280.2186,False,low,S,Desk Lamp x2,False
+ORD-0016,2026-09-27,Webcam HD,Electronics,North,5,230.48,Phone,False,False,False,False,1152.3999999999999,1417.4519999999998,False,medium,N,Webcam HD x5,False
+ORD-0017,2026-09-05,Laptop Pro 14,Electronics,West,3,5499.0,Phone,False,False,False,False,16497.0,20291.31,False,high,W,Laptop Pro 14 x3,False
+ORD-0018,2026-09-18,Webcam HD,Electronics,East,8,,Store,False,False,False,False,,,False,unknown,E,Webcam HD x8,True
+ORD-0019,2026-08-22,Headphones,Electronics,South,1,383.9,Online,False,False,False,False,383.9,472.19699999999995,False,low,S,Headphones x1,False
+ORD-0020,2026-08-09,Monitor 27,Electronics,South,1,1099.0,Phone,False,False,False,False,1099.0,1351.77,False,medium,S,Monitor 27 x1,False
+ORD-0021,2026-09-12,Notebook Pack,Stationery,North,5,26.14,Online,False,False,False,False,130.7,160.761,False,low,N,Notebook Pack x5,False
+ORD-0022,2026-09-27,Office Chair,Furniture,South,,759.05,Phone,False,False,False,False,,,False,unknown,S,Office Chair x?,True
+ORD-0023,2026-09-04,Standing Desk,Furniture,East,2,1699.0,Online,False,False,False,False,3398.0,4179.54,False,medium,E,Standing Desk x2,False
+ORD-0024,2026-10-21,USB-C Hub,Accessories,South,3,1299.99,Phone,True,False,False,True,3899.9700000000003,4796.9631,False,medium,S,USB-C Hub x3,True
+ORD-0025,2026-09-22,Desk Lamp,Furniture,North,5,119.9,Online,False,False,False,False,599.5,737.385,False,low,N,Desk Lamp x5,False
+ORD-0026,2026-08-28,Desk Lamp,Furniture,West,5,119.9,Store,False,False,False,False,599.5,737.385,False,low,W,Desk Lamp x5,False
+ORD-0027,2026-10-18,Laptop Pro 14,Electronics,South,1,5773.95,Online,False,False,False,False,5773.95,7101.9585,False,high,S,Laptop Pro 14 x1,False
+ORD-0028,2026-09-23,Headphones,Electronics,East,2,383.9,Store,False,False,False,False,767.8,944.3939999999999,False,low,E,Headphones x2,False
+ORD-0029,2026-08-13,Standing Desk,Furniture,North,5,1699.0,Phone,False,False,False,False,8495.0,10448.85,False,high,N,Standing Desk x5,False
+ORD-0030,2026-09-30,Standing Desk,Furniture,East,1,1699.0,Online,False,False,False,False,1699.0,2089.77,False,medium,E,Standing Desk x1,False
+ORD-0031,2026-09-18,Monitor 27,Electronics,North,3,1208.9,Phone,False,False,False,False,3626.7000000000003,4460.841,False,medium,N,Monitor 27 x3,False
+ORD-0032,2026-08-04,Headphones,Electronics,South,,383.9,Store,False,False,False,False,,,False,unknown,S,Headphones x?,True
+ORD-0033,2026-10-14,Standing Desk,Furniture,South,2,1699.0,Store,False,False,False,False,3398.0,4179.54,False,medium,S,Standing Desk x2,False
+ORD-0034,2026-10-05,Wireless Mouse,Accessories,West,1,43.99,Online,False,False,False,False,43.99,54.1077,False,low,W,Wireless Mouse x1,False
+ORD-0035,2026-09-18,Wireless Mouse,Accessories,North,5,43.99,Online,False,False,False,False,219.95000000000002,270.5385,False,low,N,Wireless Mouse x5,False
+ORD-0036,2026-10-07,Laptop Pro 14,Electronics,South,5,6048.9,Store,False,False,False,False,30244.5,37200.735,False,high,S,Laptop Pro 14 x5,False
+ORD-0037,2026-09-11,Headphones,Electronics,South,1,383.9,Store,False,False,False,False,383.9,472.19699999999995,False,low,S,Headphones x1,False
+ORD-0038,2026-08-25,Mechanical Keyboard,Accessories,East,3,236.55,Online,False,False,False,False,709.6500000000001,872.8695000000001,False,low,E,Mechanical Keyboard x3,False
+ORD-0039,2026-08-03,Laptop Pro 14,Electronics,East,3,5773.95,Online,False,False,False,False,17321.85,21305.8755,False,high,E,Laptop Pro 14 x3,False
+ORD-0040,2026-10-27,Laptop Pro 14,Electronics,East,2,5224.05,Phone,False,False,True,False,10448.1,12851.163,False,high,E,Laptop Pro 14 x2,True
+ORD-0041,2026-10-05,Standing Desk,Furniture,South,8,1699.0,Online,False,False,False,False,13592.0,16718.16,False,high,S,Standing Desk x8,False
+ORD-0042,2026-08-21,Mechanical Keyboard,Accessories,West,2,249.0,Online,False,False,False,False,498.0,612.54,False,low,W,Mechanical Keyboard x2,False
+ORD-0043,2026-08-09,Laptop Pro 14,Electronics,North,1,5224.05,Store,False,False,False,False,5224.05,6425.5815,False,high,N,Laptop Pro 14 x1,False
+ORD-0044,2026-09-11,Laptop Pro 14,Electronics,North,12,5499.0,Online,False,False,False,False,65988.0,81165.24,True,high,N,Laptop Pro 14 x12,False
+ORD-0045,2026-08-03,Wireless Mouse,Accessories,South,12,,Phone,False,False,False,False,,,True,unknown,S,Wireless Mouse x12,True
+ORD-0046,2026-09-14,Laptop Pro 14,Electronics,South,3,5499.0,Store,False,False,False,False,16497.0,20291.31,False,high,S,Laptop Pro 14 x3,False
+ORD-0047,2026-10-01,Desk Lamp,Furniture,East,8,125.9,Phone,False,False,False,False,1007.2,1238.856,False,medium,E,Desk Lamp x8,False
+ORD-0048,2026-10-13,Whiteboard,Stationery,South,5,189.0,Online,False,False,False,False,945.0,1162.35,False,low,S,Whiteboard x5,False
+ORD-0049,2026-08-07,Wireless Mouse,Accessories,South,8,43.99,Phone,False,False,False,False,351.92,432.8616,False,low,S,Wireless Mouse x8,False
+ORD-0050,2026-09-07,Webcam HD,Electronics,East,2,219.5,Store,False,False,False,False,439.0,539.97,False,low,E,Webcam HD x2,False
+ORD-0051,2026-10-13,Mechanical Keyboard,Accessories,East,1,249.0,Online,False,False,False,False,249.0,306.27,False,low,E,Mechanical Keyboard x1,False
+ORD-0052,2026-08-02,Office Chair,Furniture,East,12,,Phone,False,False,False,False,,,True,unknown,E,Office Chair x12,True
+ORD-0053,2026-10-16,Monitor 27,Electronics,West,2,1153.95,Store,False,False,False,False,2307.9,2838.717,False,medium,W,Monitor 27 x2,False
+ORD-0054,2026-08-08,Whiteboard,Stationery,East,1,189.0,Phone,False,False,False,False,189.0,232.47,False,low,E,Whiteboard x1,False
+ORD-0055,2026-09-23,Webcam HD,Electronics,North,1,230.48,Phone,False,False,False,False,230.48,283.49039999999997,False,low,N,Webcam HD x1,False
+ORD-0056,2026-10-19,Notebook Pack,Stationery,North,3,26.14,Phone,False,False,False,False,78.42,96.4566,False,low,N,Notebook Pack x3,False
+ORD-0057,2026-10-24,Mechanical Keyboard,Accessories,North,5,261.45,Phone,False,False,False,False,1307.25,1607.9175,False,medium,N,Mechanical Keyboard x5,False
+ORD-0058,2026-08-03,Wireless Mouse,Accessories,North,12,331.55,Phone,False,False,False,True,3978.6000000000004,4893.678000000001,True,medium,N,Wireless Mouse x12,True
+ORD-0059,2026-09-19,Notebook Pack,Stationery,East,2,26.14,Online,False,False,False,False,52.28,64.3044,False,low,E,Notebook Pack x2,False
+ORD-0060,2026-10-22,USB-C Hub,Accessories,North,5,142.89,Phone,False,False,False,False,714.4499999999999,878.7734999999999,False,low,N,USB-C Hub x5,False
+ORD-0061,2026-08-26,Office Chair,Furniture,East,2,838.95,Phone,False,False,False,False,1677.9,2063.817,False,medium,E,Office Chair x2,False
+ORD-0062,,Notebook Pack,Stationery,South,20,27.39,Phone,False,False,False,False,547.8,673.794,True,low,S,Notebook Pack x20,True
+ORD-0063,2026-10-21,Headphones,Electronics,East,2,349.0,Store,False,False,False,False,698.0,858.54,False,low,E,Headphones x2,False
+ORD-0064,2026-09-01,Standing Desk,Furniture,South,3,1614.05,Online,False,False,False,False,4842.15,5955.844499999999,False,medium,S,Standing Desk x3,False
+ORD-0065,2026-08-12,Wireless Mouse,Accessories,East,8,37.99,Store,False,False,False,False,303.92,373.8216,False,low,E,Wireless Mouse x8,False
+ORD-0066,2026-08-17,Monitor 27,Electronics,East,20,1099.0,Online,False,False,False,False,21980.0,27035.399999999998,True,high,E,Monitor 27 x20,False
+ORD-0067,2026-10-03,USB-C Hub,Accessories,North,2,349.0,Online,True,False,False,False,698.0,858.54,False,low,N,USB-C Hub x2,True
+ORD-0068,2026-09-15,Mechanical Keyboard,Accessories,South,3,236.55,Online,False,False,False,False,709.6500000000001,872.8695000000001,False,low,S,Mechanical Keyboard x3,False
+ORD-0069,2026-09-01,Monitor 27,Electronics,South,25,1099.0,Online,False,False,False,False,27475.0,33794.25,True,high,S,Monitor 27 x25,True
+ORD-0070,2026-08-09,Laptop Pro 14,Electronics,South,1,5499.0,Phone,False,False,False,False,5499.0,6763.7699999999995,False,high,S,Laptop Pro 14 x1,False
+ORD-0071,2026-09-02,Standing Desk,Furniture,West,2,1699.0,Online,False,False,False,False,3398.0,4179.54,False,medium,W,Standing Desk x2,False
+ORD-0072,2026-09-23,Laptop Pro 14,Electronics,West,1,6048.9,Store,False,False,False,False,6048.9,7440.146999999999,False,high,W,Laptop Pro 14 x1,False
+ORD-0073,2026-09-19,Standing Desk,Furniture,East,,1699.0,Online,False,False,False,False,,,False,unknown,E,Standing Desk x?,True
+ORD-0074,2026-09-07,Mechanical Keyboard,Accessories,West,1,249.0,Store,False,False,False,False,249.0,306.27,False,low,W,Mechanical Keyboard x1,False
+ORD-0075,2026-09-10,Standing Desk,Furniture,South,12,1783.95,Online,False,False,False,False,21407.4,26331.102000000003,True,high,S,Standing Desk x12,False
+ORD-0076,2026-09-07,Webcam HD,Electronics,East,1,241.45,Store,False,False,False,False,241.45,296.9835,False,low,E,Webcam HD x1,False
+ORD-0077,2026-08-01,Monitor 27,Electronics,West,25,1299.99,Phone,True,False,False,False,32499.75,39974.6925,True,high,W,Monitor 27 x25,True
+ORD-0078,2026-08-09,Whiteboard,Stationery,West,5,198.45,Online,False,False,False,False,992.25,1220.4675,False,low,W,Whiteboard x5,False
+ORD-0079,2026-08-20,Headphones,Electronics,West,1,366.45,Phone,False,False,False,False,366.45,450.7335,False,low,W,Headphones x1,False
+ORD-0080,2026-08-03,USB-C Hub,Accessories,West,3,123.41,Phone,False,False,False,False,370.23,455.3829,False,low,W,USB-C Hub x3,False
+ORD-0081,2026-09-21,Monitor 27,Electronics,South,1,1099.0,Phone,False,False,False,False,1099.0,1351.77,False,medium,S,Monitor 27 x1,False
+ORD-0082,2026-09-05,Office Chair,Furniture,West,12,799.0,Online,False,False,False,False,9588.0,11793.24,True,high,W,Office Chair x12,False
+ORD-0083,2026-08-26,Office Chair,Furniture,East,8,799.0,Online,False,False,False,False,6392.0,7862.16,False,high,E,Office Chair x8,False
+ORD-0084,2026-08-05,Whiteboard,Stationery,East,5,189.0,Phone,False,False,False,False,945.0,1162.35,False,low,E,Whiteboard x5,False
+ORD-0085,2026-08-07,Office Chair,Furniture,West,5,838.95,Store,False,False,False,False,4194.75,5159.5425,False,medium,W,Office Chair x5,False
+ORD-0086,2026-09-26,Laptop Pro 14,Electronics,South,20,6048.9,Store,False,False,False,False,120978.0,148802.94,True,high,S,Laptop Pro 14 x20,False
+ORD-0087,2026-10-01,Office Chair,Furniture,North,8,799.0,Online,False,False,False,False,6392.0,7862.16,False,high,N,Office Chair x8,False
+ORD-0088,2026-08-08,Monitor 27,Electronics,East,1,1044.05,Phone,False,False,False,False,1044.05,1284.1815,False,medium,E,Monitor 27 x1,False
+ORD-0089,2026-10-16,Whiteboard,Stationery,East,5,,Store,False,False,False,False,,,False,unknown,E,Whiteboard x5,True
+ORD-0090,2026-09-17,Webcam HD,Electronics,South,8,219.5,Online,False,False,False,False,1756.0,2159.88,False,medium,S,Webcam HD x8,False
+ORD-0091,2027-12-05,Notebook Pack,Stationery,West,1,23.65,Online,False,True,False,False,23.65,29.089499999999997,False,low,W,Notebook Pack x1,True
+ORD-0092,2026-08-17,Mechanical Keyboard,Accessories,North,5,261.45,Phone,False,False,False,False,1307.25,1607.9175,False,medium,N,Mechanical Keyboard x5,False
+ORD-0093,2026-08-21,Headphones,Electronics,West,5,383.9,Phone,False,False,False,False,1919.5,2360.985,False,medium,W,Headphones x5,False
+ORD-0094,2026-08-12,Office Chair,Furniture,South,,759.05,Store,False,False,False,False,,,False,unknown,S,Office Chair x?,True
+ORD-0095,2026-08-24,Whiteboard,Stationery,North,1,189.0,Phone,False,False,False,False,189.0,232.47,False,low,N,Whiteboard x1,False
+ORD-0096,2026-08-07,Office Chair,Furniture,North,8,799.0,Online,False,False,False,False,6392.0,7862.16,False,high,N,Office Chair x8,False
+ORD-0097,2026-09-21,Wireless Mouse,Accessories,East,3,37.99,Online,False,False,False,False,113.97,140.1831,False,low,E,Wireless Mouse x3,False
+ORD-0098,2026-08-08,Desk Lamp,Furniture,South,20,119.9,Store,False,False,False,False,2398.0,2949.54,True,medium,S,Desk Lamp x20,False
+ORD-0099,2026-09-29,Laptop Pro 14,Electronics,West,8,5224.05,Store,False,False,False,False,41792.4,51404.652,False,high,W,Laptop Pro 14 x8,False
+ORD-0100,2026-08-09,Monitor 27,Electronics,North,2,1044.05,Store,False,False,False,False,2088.1,2568.363,False,medium,N,Monitor 27 x2,False
+ORD-0101,2026-10-06,Standing Desk,Furniture,West,5,1868.9,Store,False,False,False,False,9344.5,11493.735,False,high,W,Standing Desk x5,False
+ORD-0102,2026-10-21,Monitor 27,Electronics,East,2,1044.05,Online,False,False,False,False,2088.1,2568.363,False,medium,E,Monitor 27 x2,False
+ORD-0103,2026-10-19,Headphones,Electronics,South,5,366.45,Store,False,False,False,False,1832.25,2253.6675,False,medium,S,Headphones x5,False
+ORD-0104,2026-10-23,Notebook Pack,Stationery,South,1,26.14,Phone,False,False,False,False,26.14,32.1522,False,low,S,Notebook Pack x1,False
+ORD-0105,2026-10-21,Desk Lamp,Furniture,North,3,123.41,Online,False,False,False,False,370.23,455.3829,False,low,N,Desk Lamp x3,False
+ORD-0106,2026-09-27,Laptop Pro 14,Electronics,North,1,5499.0,Phone,False,False,False,False,5499.0,6763.7699999999995,False,high,N,Laptop Pro 14 x1,False
+ORD-0107,2026-08-29,Laptop Pro 14,Electronics,North,2,6048.9,Store,False,False,False,False,12097.8,14880.293999999998,False,high,N,Laptop Pro 14 x2,False
+ORD-0108,2026-10-17,Whiteboard,Stationery,West,1,189.0,Store,False,False,False,False,189.0,232.47,False,low,W,Whiteboard x1,False
+ORD-0109,2026-08-07,Headphones,Electronics,North,3,366.45,Store,False,False,False,False,1099.35,1352.2005,False,medium,N,Headphones x3,False
+ORD-0110,2026-10-18,Desk Lamp,Furniture,East,1,131.89,Online,False,False,False,False,131.89,162.22469999999998,False,low,E,Desk Lamp x1,False
+ORD-0113,2026-08-11,Monitor 27,Electronics,East,5,1099.0,Phone,False,False,False,False,5495.0,6758.849999999999,False,high,E,Monitor 27 x5,False
+ORD-0114,2026-08-17,Monitor 27,Electronics,South,1,1044.05,Store,False,False,False,False,1044.05,1284.1815,False,medium,S,Monitor 27 x1,False
+ORD-0115,2026-08-28,Whiteboard,Stationery,East,8,189.0,Phone,False,False,False,False,1512.0,1859.76,False,medium,E,Whiteboard x8,False
+ORD-0116,2026-10-17,USB-C Hub,Accessories,North,12,142.89,Store,False,False,False,False,1714.6799999999998,2109.0564,True,medium,N,USB-C Hub x12,False
+ORD-0117,2026-08-03,Standing Desk,Furniture,West,3,1699.0,Phone,False,False,False,False,5097.0,6269.3099999999995,False,high,W,Standing Desk x3,False
+ORD-0118,2026-08-15,Wireless Mouse,Accessories,West,8,43.99,Phone,False,False,False,False,351.92,432.8616,False,low,W,Wireless Mouse x8,False
+ORD-0119,2026-10-16,Headphones,Electronics,North,2,331.55,Phone,False,False,False,False,663.1,815.613,False,low,N,Headphones x2,False
+ORD-0120,2026-08-14,Office Chair,Furniture,East,25,759.05,Online,False,False,False,False,18976.25,23340.7875,True,high,E,Office Chair x25,True
