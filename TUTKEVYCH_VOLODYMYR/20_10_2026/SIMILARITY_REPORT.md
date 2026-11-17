@@ -8,7 +8,7 @@ Pupil folder: `TUTKEVYCH_VOLODYMYR`
 
 | your file | similarity | length |
 |---|---|---|
-| `TUTKEVYCH_VOLODYMYR/20_10__2026/slide_16.py` | **69%** | 440 chars |
+| `TUTKEVYCH_VOLODYMYR/20_10_2026/slide_16.py` | **69%** | 440 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

@@ -1,8 +1,8 @@
 {
-  "generated": "b962cd11005b2414ced777ca93449e69f1fa4f24",
+  "generated": "3174fe629e56e3671048c431b04c6157933cbd25",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 212,
+  "fileCount": 217,
   "pupilCount": 9,
   "skipped": [
     {
@@ -175,15 +175,15 @@
       "sameCommit": false,
       "later": {
         "pupil": "TUTKEVYCH_VOLODYMYR",
-        "path": "TUTKEVYCH_VOLODYMYR/20_10__2026/slide_16.py",
-        "assignment": "20_10__2026",
-        "added": "2026-10-20T17:20:02+02:00"
+        "path": "TUTKEVYCH_VOLODYMYR/20_10_2026/slide_16.py",
+        "assignment": "20_10_2026",
+        "added": "2026-11-17T15:50:23+01:00"
       },
       "earlier": {
-        "pupil": "WASIAK_FRANCISZEK",
-        "path": "WASIAK_FRANCISZEK/20_10_2026/ex1.py",
+        "pupil": "BUDZOWSKI_TYMON",
+        "path": "BUDZOWSKI_TYMON/20_10_2026/ex1.py",
         "assignment": "20_10_2026",
-        "added": "2026-10-20T16:22:35+02:00"
+        "added": "2026-10-20T16:53:55+02:00"
       },
       "jaccard": 0.6884,
       "text": 0.9346,
