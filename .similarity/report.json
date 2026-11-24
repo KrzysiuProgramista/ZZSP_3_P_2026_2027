@@ -1,9 +1,9 @@
 {
-  "generated": "088a9927c5347d46019da12a84515f0cd44413c2",
+  "generated": "9e61a9a6783da0c56fd9e85fbf978b8a4a515337",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 219,
-  "pupilCount": 10,
+  "fileCount": 160,
+  "pupilCount": 9,
   "skipped": [
     {
       "path": "BUDZOWSKI_TYMON/08_09_2026/app/__init__.py",

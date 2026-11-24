@@ -1,0 +1,8 @@
+# Private grade data: never push to GitHub (see project briefing)
+synergia.csv
+grades_raw.csv
+*_report/
+*.pdf
+
+# Local virtual environment
+venv/
