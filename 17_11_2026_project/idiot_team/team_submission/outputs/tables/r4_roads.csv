@@ -1,0 +1,4 @@
+road_name,sensor_id,road_type,event_speed_kmh,baseline_speed_kmh,event_vehicles,baseline_vehicles,speed_drop_pct,vehicle_change_pct
+Bridge Road,S-004,arterial,24.4,43.7,77.0,103.4,44.3,-25.5
+Quay Street,S-006,local,15.4,27.3,78.3,100.8,43.7,-22.2
+Riverbank Avenue,S-005,collector,19.4,33.8,79.8,100.1,42.5,-20.3

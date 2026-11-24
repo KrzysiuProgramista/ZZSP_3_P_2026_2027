@@ -1,0 +1,7 @@
+district,avg_hourly_vehicles,avg_speed_kmh,speed_pct_of_limit,total_vehicles,observations,sensors
+Central,74.57,42.52,74.86,166435,2232,3
+Riverside,64.13,36.32,72.27,143138,2232,3
+University,61.5,36.53,72.67,137259,2232,3
+Industrial,56.39,39.09,73.13,125871,2232,3
+Airport,52.48,42.26,63.21,117137,2232,3
+Old Town,42.84,30.39,91.37,95617,2232,3

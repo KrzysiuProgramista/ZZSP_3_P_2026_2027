@@ -1,0 +1,8 @@
+district,incidents,avg_severity_score,total_duration_min
+Riverside,31,2.1,1582
+Industrial,26,2.23,1146
+Old Town,20,2.1,868
+Airport,18,2.0,851
+Central,16,2.12,646
+University,16,1.88,840
+Unknown sensor,3,2.0,83
