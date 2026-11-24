@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My grades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">PERSONAL LEARNING ANALYTICS</p>
+      <h1>My grades</h1>
+      <p>58 numeric grades across 19 subjects.</p>
+    </header>
+
+    <div class="dashboard">
+      <section class="card subjects">
+        <h2>Subject averages and grade counts</h2>
+        <p>Sorted by average. The second bar shows how many grades each average is based on.</p>
+
+        <table>
+          <thead>
+            <tr><th scope="col">Subject</th><th scope="col">Average / 6</th><th scope="col">Grade count</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Informatyka</th><td><meter max="6" value="6"></meter> 6.00</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Język niemiecki</th><td><meter max="6" value="5.33"></meter> 5.33</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Edukacja obywatelska</th><td><meter max="6" value="5"></meter> 5.00</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Projektowanie w języku Python</th><td><meter max="6" value="5"></meter> 5.00</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Wychowanie fizyczne</th><td><meter max="6" value="5"></meter> 5.00</td><td><meter max="11" value="4"></meter> 4</td></tr>
+            <tr><th scope="row">Język angielski</th><td><meter max="6" value="4.91"></meter> 4.91</td><td><meter max="11" value="11"></meter> 11</td></tr>
+            <tr><th scope="row">Fizyka</th><td><meter max="6" value="4.5"></meter> 4.50</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Język angielski zawodowy</th><td><meter max="6" value="4.5"></meter> 4.50</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Edukacja zdrowotna</th><td><meter max="6" value="4"></meter> 4.00</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Geografia</th><td><meter max="6" value="4"></meter> 4.00</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Historia</th><td><meter max="6" value="3.5"></meter> 3.50</td><td><meter max="11" value="4"></meter> 4</td></tr>
+            <tr><th scope="row">Projektowanie i administrowanie bazami danych</th><td><meter max="6" value="3.33"></meter> 3.33</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Chemia</th><td><meter max="6" value="3"></meter> 3.00</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Programowanie aplikacji mobilnych</th><td><meter max="6" value="3"></meter> 3.00</td><td><meter max="11" value="1"></meter> 1</td></tr>
+            <tr><th scope="row">Język polski</th><td><meter max="6" value="2.67"></meter> 2.67</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Programowanie obiektowe</th><td><meter max="6" value="2.5"></meter> 2.50</td><td><meter max="11" value="2"></meter> 2</td></tr>
+            <tr><th scope="row">Matematyka</th><td><meter max="6" value="2.4"></meter> 2.40</td><td><meter max="11" value="5"></meter> 5</td></tr>
+            <tr><th scope="row">Programowanie aplikacji internetowych</th><td><meter max="6" value="2"></meter> 2.00</td><td><meter max="11" value="3"></meter> 3</td></tr>
+            <tr><th scope="row">Projektowanie oprogramowania</th><td><meter max="6" value="2"></meter> 2.00</td><td><meter max="11" value="1"></meter> 1</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Grade frequency</h2>
+        <p>Number of occurrences for each grade on the 1–6 scale.</p>
+        <ul class="frequency">
+          <li><span>Grade 1</span><meter max="22" value="5"></meter><strong>5</strong></li>
+          <li><span>Grade 2</span><meter max="22" value="7"></meter><strong>7</strong></li>
+          <li><span>Grade 3</span><meter max="22" value="5"></meter><strong>5</strong></li>
+          <li><span>Grade 4</span><meter max="22" value="13"></meter><strong>13</strong></li>
+          <li><span>Grade 5</span><meter max="22" value="22"></meter><strong>22</strong></li>
+          <li><span>Grade 6</span><meter max="22" value="6"></meter><strong>6</strong></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Grade spread by subject</h2>
+        <p>The shaded box contains the middle 50% of grades, the dark line marks the median, and dots mark potential outliers. Only subjects with at least three grades are shown.</p>
+
+        <div class="plot-axis" aria-hidden="true">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+
+        <ul class="boxplots">
+          <li><span>Informatyka</span>
+            <div class="plot" style="--lo:100%;--q1:100%;--mid:100%;--q3:100%;--hi:100%"
+                 role="img" aria-label="All grades were 6"><i class="median"></i></div>
+          </li>
+          <li><span>Język niemiecki</span>
+            <div class="plot" style="--lo:80%;--q1:80%;--mid:80%;--q3:90%;--hi:100%"
+                 role="img" aria-label="Median 5; whiskers 5 to 6"><i class="median"></i></div>
+          </li>
+          <li><span>Wychowanie fizyczne</span>
+            <div class="plot" style="--lo:80%;--q1:80%;--mid:80%;--q3:80%;--hi:80%"
+                 role="img" aria-label="All grades were 5"><i class="median"></i></div>
+          </li>
+          <li><span>Język angielski</span>
+            <div class="plot" style="--lo:80%;--q1:80%;--mid:80%;--q3:80%;--hi:80%"
+                 role="img" aria-label="Median 5; potential outliers at 3, 4, and 6">
+              <i class="median"></i><i class="dot" style="--at:40%"></i>
+              <i class="dot" style="--at:60%"></i><i class="dot" style="--at:100%"></i>
+            </div>
+          </li>
+          <li><span>Edukacja zdrowotna</span>
+            <div class="plot" style="--lo:60%;--q1:60%;--mid:60%;--q3:60%;--hi:60%"
+                 role="img" aria-label="All grades were 4"><i class="median"></i></div>
+          </li>
+          <li><span>Historia</span>
+            <div class="plot" style="--lo:45%;--q1:45%;--mid:60%;--q3:65%;--hi:80%"
+                 role="img" aria-label="Median 4; potential outlier at 1">
+              <i class="median"></i><i class="dot" style="--at:0%"></i>
+            </div>
+          </li>
+          <li><span>Projektowanie i administrowanie bazami danych</span>
+            <div class="plot" style="--lo:20%;--q1:30%;--mid:40%;--q3:60%;--hi:80%"
+                 role="img" aria-label="Median 3; whiskers 2 to 5"><i class="median"></i></div>
+          </li>
+          <li><span>Język polski</span>
+            <div class="plot" style="--lo:0%;--q1:10%;--mid:20%;--q3:50%;--hi:80%"
+                 role="img" aria-label="Median 2; whiskers 1 to 5"><i class="median"></i></div>
+          </li>
+          <li><span>Matematyka</span>
+            <div class="plot" style="--lo:0%;--q1:20%;--mid:20%;--q3:40%;--hi:60%"
+                 role="img" aria-label="Median 2; whiskers 1 to 4"><i class="median"></i></div>
+          </li>
+          <li><span>Programowanie aplikacji internetowych</span>
+            <div class="plot" style="--lo:0%;--q1:0%;--mid:0%;--q3:30%;--hi:60%"
+                 role="img" aria-label="Median 1; whiskers 1 to 4"><i class="median"></i></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>What I noticed</h2>
+      <ol>
+        <li>Informatyka had the highest observed average: 6.00 from 3 grades.</li>
+        <li>Programowanie aplikacji internetowych and Projektowanie oprogramowania tied for the lowest observed average: 2.00, based on 3 grades and 1 grade, respectively.</li>
+        <li>Grade 5 occurred most often: 22 out of 58 grades.</li>
+      </ol>
+
+      <h2>Method and limitations</h2>
+      <p>The analysis uses unweighted current grades on the 1–6 scale. It keeps only
+        the later grade in each correction group and excludes status marks and
+        plus/minus entries without an agreed numeric conversion.</p>
+      <p>The export does not give dates for regular grades, so grade counts are
+        shown instead of a time trend. An average based on one or two grades can
+        change quickly and should not be treated as an official result.</p>
+    </section>
+  </main>
+</body>
+</html>
