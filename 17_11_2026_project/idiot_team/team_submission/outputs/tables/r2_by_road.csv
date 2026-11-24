@@ -1,0 +1,19 @@
+road_name,district,road_type,avg_hourly_vehicles,avg_speed_kmh,speed_limit_kmh,speed_pct_of_limit,incidents,avg_severity_score,max_severity_score
+Central Boulevard,Central,arterial,74.71,45.71,60,76.18,5,1.8,3
+Main Avenue,Central,arterial,74.5,45.87,60,76.46,7,2.43,4
+Market Street,Central,collector,74.49,35.97,50,71.93,4,2.0,3
+Bridge Road,Riverside,arterial,64.29,45.33,60,75.54,11,1.64,4
+Riverbank Avenue,Riverside,collector,64.07,35.65,50,71.3,8,2.5,3
+Quay Street,Riverside,local,64.03,27.99,40,69.98,12,2.25,4
+Science Avenue,University,arterial,61.52,45.55,60,75.92,6,1.67,3
+Campus Drive,University,collector,61.52,35.99,50,71.97,6,2.17,3
+Library Road,University,local,61.45,28.04,40,70.11,4,1.75,3
+Factory Road,Industrial,arterial,56.63,45.48,60,75.8,10,2.2,3
+Logistics Avenue,Industrial,collector,56.28,35.96,50,71.93,7,2.29,3
+Depot Street,Industrial,collector,56.28,35.83,50,71.67,9,2.22,4
+Cargo Boulevard,Airport,arterial,52.58,45.33,70,64.76,4,2.0,3
+Runway Access,Airport,collector,52.45,35.8,60,59.66,10,2.2,4
+Terminal Road,Airport,arterial,52.42,45.66,70,65.22,4,1.5,3
+Historic Lane,Old Town,local,42.93,27.7,30,92.32,8,1.5,2
+Cathedral Street,Old Town,collector,42.89,35.72,40,89.31,3,1.67,2
+Museum Road,Old Town,local,42.7,27.75,30,92.5,9,2.78,4

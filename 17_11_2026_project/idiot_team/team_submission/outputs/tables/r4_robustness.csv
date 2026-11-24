@@ -1,0 +1,3 @@
+baseline,days,baseline_speed_kmh,event_speed_kmh,speed_drop_pct
+nearby weekdays (+/-7 days),6,34.9,19.7,43.6
+all other Thursdays,4,35.2,19.7,44.0

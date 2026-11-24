@@ -1,0 +1,4 @@
+scenario,rows_after_merge
+clean sensors table,13392
+"S-001 duplicated, no validate=",14136
+"S-001 duplicated, validate='many_to_one'",MergeError: Merge keys are not unique in right dataset; not a many-to-one merge

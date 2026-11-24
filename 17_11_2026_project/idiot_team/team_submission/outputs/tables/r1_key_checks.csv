@@ -1,0 +1,6 @@
+table,key,rows,duplicate_keys,key_is_unique
+traffic,timestamp + sensor_id,13392,0,True
+sensors,sensor_id,18,0,True
+weather,timestamp + district,4446,0,True
+incidents (id),incident_id,130,0,True
+incidents (join key),timestamp + sensor_id,130,0,True

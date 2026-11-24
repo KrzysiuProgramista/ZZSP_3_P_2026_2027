@@ -1,0 +1,7 @@
+district,avg_vehicles_off_peak,avg_vehicles_peak,peak_minus_off_peak,peak_to_off_peak_ratio
+Central,55.43,131.97,76.53,2.38
+Riverside,47.93,112.74,64.81,2.35
+University,45.88,108.35,62.47,2.36
+Industrial,42.08,99.34,57.26,2.36
+Airport,39.01,92.89,53.88,2.38
+Old Town,31.82,75.9,44.08,2.39

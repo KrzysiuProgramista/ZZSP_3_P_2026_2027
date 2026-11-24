@@ -1,0 +1,5 @@
+incident_id,timestamp,road_name,district,incident_type,severity,duration_min,lanes_blocked
+INC-0102,2026-11-12 03:00:00,Science Avenue,University,debris_on_road,low,59,0
+INC-MYST-001,2026-11-12 07:00:00,Bridge Road,Riverside,multi_vehicle_collision,critical,110,2
+INC-MYST-002,2026-11-12 08:00:00,Riverbank Avenue,Riverside,road_closure,high,95,1
+INC-MYST-003,2026-11-12 09:00:00,Quay Street,Riverside,traffic_signal_failure,high,73,0
