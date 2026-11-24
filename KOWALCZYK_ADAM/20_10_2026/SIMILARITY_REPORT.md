@@ -9,7 +9,6 @@ Pupil folder: `KOWALCZYK_ADAM`
 | your file | similarity | length |
 |---|---|---|
 | `KOWALCZYK_ADAM/20_10_2026/librus_intelligence/inspect_librus_pdf.py` | **100%** | 2336 chars |
-| `KOWALCZYK_ADAM/20_10_2026/librus_intelligence/starter.py` | **67%** | 2896 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

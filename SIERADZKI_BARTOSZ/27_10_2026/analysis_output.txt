@@ -1,0 +1,380 @@
+
+==============================================================================
+MISSION 1 - PROFILE THE DAMAGE
+==============================================================================
+shape: (120, 8)
+         id  order_date         product     category region quantity    price channel
+0  ORD-0001  19.09.2026    Office Chair    Furniture   East        2   799.00   Phone
+1  ORD-0002  02.08.2026   Laptop Pro 14  Electronics  South        2  6048.90   Phone
+2  ORD-0003  20.08.2026  Wireless Mouse  Accessories   East        2    39.99  Online
+3  ORD-0004  14.10.2026   Laptop Pro 14  Electronics  North        5      NaN  Online
+4  ORD-0005  28.08.2026   Notebook Pack   Stationery  North        1    24.90   Phone 
+
+dtypes (all text on purpose):
+ id            str
+order_date    str
+product       str
+category      str
+region        str
+quantity      str
+price         str
+channel       str
+dtype: object 
+
+Missing values (NaN/blank):
+             missing  missing_%
+id                0        0.0
+order_date        0        0.0
+product           0        0.0
+category          0        0.0
+region            0        0.0
+quantity          2        1.7
+price             4        3.3
+channel           0        0.0 
+
+Hidden missing: 2 prices are the text 'unknown'
+
+Exact duplicate rows (all copies): 2 (1 redundant)
+Rows sharing a repeated id: 4
+           id  order_date        product     category region quantity    price channel
+25   ORD-0026  28.08.2026      Desk Lamp    Furniture   West        5   119.90   Store
+110  ORD-0026  28.08.2026      Desk Lamp    Furniture   West        5   119.90   Store
+39   ORD-0040  09.10.2026  Laptop Pro 14  Electronics   East        2  5224.05   Phone
+111  ORD-0040  27.10.2026  Laptop Pro 14  Electronics   East        2  5224.05   Phone 
+
+unique region: ["' north '", "'East'", "'NORTH'", "'North'", "'South'", "'West'", "'south'"]
+unique category: ["'Accessories'", "'Accessories '", "'Electronics'", "'Furniture'", "'Stationery'", "'electronics'"]
+unique channel: ["'Online'", "'Phone'", "'Store'"]
+
+DATA-QUALITY ISSUES FOUND
+ 1. Inconsistent text (case / spaces): region has 7 spellings for 4 regions; product and category also vary in case/whitespace
+ 2. Mixed price formats / placeholders: 5 non-numeric price strings ($1,299.99, '€ 349,00', 'unknown')
+ 3. Missing values: price: 4 blank + 2 'unknown'; quantity: 2 blank
+ 4. Impossible / unreadable quantities: 0, -3 and the word 'five' in the quantity column
+ 5. Invalid and out-of-range dates: 2 impossible dates (31.02.2026) and 1 date in the future (05.12.2027)
+ 6. Duplicates: 1 exact duplicate row and an id (ORD-0040) repeated with a different date
+ 7. Category contradicts product: 4 rows, e.g. a laptop filed as Accessories
+ 8. Suspicious prices: 3 prices far from the product's normal price (USB-C Hub at 1299.99 / 349, Wireless Mouse at 331.55)
+ 9. Gap in id sequence: ORD-0111 .. ORD-0112 never appear (possible lost orders)
+
+==============================================================================
+MISSION 2 - CLEANING REPORT
+==============================================================================
+{
+  "rows_in": 120,
+  "rows_out": 118,
+  "dropped_exact_duplicates": 1,
+  "dropped_older_duplicate_ids": 1,
+  "ids_with_conflict_kept_newest": 1,
+  "fixed_values": {
+    "id_whitespace_trimmed": 0,
+    "product_whitespace_trimmed": 1,
+    "category_whitespace_trimmed": 1,
+    "region_whitespace_trimmed": 1,
+    "channel_whitespace_trimmed": 0,
+    "product_standardised": 3,
+    "category_standardised_case": 3,
+    "category_overridden_by_product": 4,
+    "category_filled_from_product": 0,
+    "region_standardised": 3,
+    "channel_standardised": 0,
+    "price_format_normalised": 3,
+    "quantity_converted_from_word": 1
+  },
+  "invalid_values_set_to_missing": {
+    "price": {
+      "blank": 4,
+      "unknown": 2
+    },
+    "quantity": {
+      "blank": 2,
+      "non_positive": 2
+    },
+    "order_date": {
+      "invalid": 2
+    }
+  },
+  "kept_but_noted": {
+    "price_had_currency_symbol": 3,
+    "future_dates": 1
+  },
+  "unrecognised_products": 0,
+  "remaining_missing": {
+    "id": 0,
+    "order_date": 2,
+    "product": 0,
+    "category": 0,
+    "region": 0,
+    "quantity": 4,
+    "price": 6,
+    "channel": 0
+  },
+  "rows_needing_review": 24,
+  "rows_without_usable_total": 10
+}
+
+==============================================================================
+MISSION 3 - DERIVED COLUMNS
+==============================================================================
+         id              product  quantity    price     total  total_with_vat  is_bulk priority region_code            product_label
+0  ORD-0001         Office Chair         2   799.00   1598.00         1965.54    False   medium           E          Office Chair x2
+1  ORD-0002        Laptop Pro 14         2  6048.90  12097.80        14880.29    False     high           S         Laptop Pro 14 x2
+2  ORD-0003       Wireless Mouse         2    39.99     79.98           98.38    False      low           E        Wireless Mouse x2
+3  ORD-0004        Laptop Pro 14         5      NaN       NaN             NaN    False  unknown           N         Laptop Pro 14 x5
+4  ORD-0005        Notebook Pack         1    24.90     24.90           30.63    False      low           N         Notebook Pack x1
+5  ORD-0006            Webcam HD         5   219.50   1097.50         1349.92    False   medium           N             Webcam HD x5
+6  ORD-0007  Mechanical Keyboard        20   249.00   4980.00         6125.40     True   medium           E  Mechanical Keyboard x20
+7  ORD-0008           Monitor 27         5      NaN       NaN             NaN    False  unknown           S            Monitor 27 x5 
+
+priority counts:
+ priority
+low        47
+medium     32
+high       29
+unknown    10 
+
+region_code counts:
+ region_code
+E    32
+S    32
+N    31
+W    23
+
+vectorised label == apply(axis=1) label: True
+
+==============================================================================
+MISSION 4 - MANAGEMENT QUESTIONS
+==============================================================================
+Q1. Which category has the highest total sales value?
+category
+Electronics    489834.13
+Furniture      135216.09
+Accessories     23402.76
+Stationery       5845.14
+-> Electronics leads with 489,834.13 (75% of the known total). Category is taken from the product (see cleaning notes). Orders with no usable price/quantity are excluded, so every category is understated by those orders.
+
+Q2. Five orders with the highest total value
+      id       product  quantity   price     total  needs_review                              review_reason
+ORD-0086 Laptop Pro 14        20 6048.90 120978.00         False                                           
+ORD-0044 Laptop Pro 14        12 5499.00  65988.00         False                                           
+ORD-0099 Laptop Pro 14         8 5224.05  41792.40         False                                           
+ORD-0077    Monitor 27        25 1299.99  32499.75          True price_currency_symbol; suspicious_quantity
+ORD-0036 Laptop Pro 14         5 6048.90  30244.50         False                                           
+-> Only 1 of these 5 is on the review list: the others have normal prices and plausible bulk quantities, so they are not data errors. But ORD-0086 alone is 18% of all known sales, and the top 5 together are 45%: results are highly concentrated, so confirming these orders matters most.
+
+Q3. Which region has the most orders?
+region
+East     32
+South    32
+North    31
+West     23
+-> East and South are tied with 32 orders each. Counts include orders with a missing price, because they are real orders.
+
+Q4. Orders missing a usable price or quantity
+missing price: 6, missing quantity: 4, either: 10 of 118 orders (8.5%)
+
+Q5. Total sales value after cleaning
+total = 654,298.12  (incl. VAT 804,786.64)
+Missing handling: 10 orders have no usable total and contribute NOTHING (they are not valued at 0 and not estimated), so this is a lower bound.
+Sensitivity: only orders with no review flag add up to 538,282.77 (82% of the total). 116,015.35 depends on data a human should confirm.
+
+Q6. Orders to flag for manual review
+ csv_line       id order_date        product region  quantity   price    total                              review_reason
+        5 ORD-0004 2026-10-14  Laptop Pro 14  North         5     NaN      NaN                              missing_price
+        9 ORD-0008 2026-10-13     Monitor 27  South         5     NaN      NaN                              missing_price
+       14 ORD-0013 2026-08-06      USB-C Hub  North      <NA>  123.41      NaN                           missing_quantity
+       15 ORD-0014        NaT     Headphones  North         1  366.45   366.45                               invalid_date
+       19 ORD-0018 2026-09-18      Webcam HD   East         8     NaN      NaN                              missing_price
+       23 ORD-0022 2026-09-27   Office Chair  South      <NA>  759.05      NaN    missing_quantity; quantity_non_positive
+       25 ORD-0024 2026-10-21      USB-C Hub  South         3 1299.99  3899.97       price_currency_symbol; price_outlier
+       33 ORD-0032 2026-08-04     Headphones  South         5  383.90  1919.50                          quantity_was_text
+       44 ORD-0043 2026-08-09  Laptop Pro 14  North         1 5224.05  5224.05                          category_mismatch
+       46 ORD-0045 2026-08-03 Wireless Mouse  South        12     NaN      NaN                              missing_price
+       53 ORD-0052 2026-08-02   Office Chair   East        12     NaN      NaN                              missing_price
+       59 ORD-0058 2026-08-03 Wireless Mouse  North        12  331.55  3978.60           price_outlier; category_mismatch
+       63 ORD-0062        NaT  Notebook Pack  South        20   27.39   547.80                               invalid_date
+       68 ORD-0067 2026-10-03      USB-C Hub  North         2  349.00   698.00       price_currency_symbol; price_outlier
+       70 ORD-0069 2026-09-01     Monitor 27  South        25 1099.00 27475.00                        suspicious_quantity
+       74 ORD-0073 2026-09-19  Standing Desk   East      <NA> 1699.00      NaN                           missing_quantity
+       78 ORD-0077 2026-08-01     Monitor 27   West        25 1299.99 32499.75 price_currency_symbol; suspicious_quantity
+       83 ORD-0082 2026-09-05   Office Chair   West        12  799.00  9588.00                          category_mismatch
+       90 ORD-0089 2026-10-16     Whiteboard   East         5     NaN      NaN                              missing_price
+       92 ORD-0091 2027-12-05  Notebook Pack   West         1   23.65    23.65                                future_date
+       95 ORD-0094 2026-08-12   Office Chair  South      <NA>  759.05      NaN    missing_quantity; quantity_non_positive
+      106 ORD-0105 2026-10-21      Desk Lamp  North         3  123.41   370.23                          category_mismatch
+      113 ORD-0040 2026-10-27  Laptop Pro 14   East         2 5224.05 10448.10                             conflicting_id
+      121 ORD-0120 2026-08-14   Office Chair   East        25  759.05 18976.25                        suspicious_quantity
+
+review reasons:
+ review_reason
+missing_price            6
+missing_quantity         4
+category_mismatch        4
+price_currency_symbol    3
+price_outlier            3
+suspicious_quantity      3
+invalid_date             2
+quantity_non_positive    2
+quantity_was_text        1
+future_date              1
+conflicting_id           1
+-> 24 of 118 orders (20%).
+
+==============================================================================
+MISSION 5 - PIPELINE GUARANTEES
+==============================================================================
+raw DataFrame unchanged after the pipeline: OK
+running prepare_sales twice gives identical data and report: OK
+(unit tests: pytest -q test_sales_pipeline.py)
+
+==============================================================================
+BONUS - quality_report(), group-by and benchmark
+==============================================================================
+quality_report on the cleaned data:
+{
+  "shape": [
+    118,
+    8
+  ],
+  "dtypes": {
+    "order_date": "datetime64[us]",
+    "product": "string",
+    "category": "string",
+    "region": "string",
+    "quantity": "Int64",
+    "price": "float64",
+    "channel": "string",
+    "total": "float64"
+  },
+  "missing_pct": {
+    "order_date": 1.7,
+    "product": 0.0,
+    "category": 0.0,
+    "region": 0.0,
+    "quantity": 3.4,
+    "price": 5.1,
+    "channel": 0.0,
+    "total": 8.5
+  },
+  "exact_duplicate_rows": 0,
+  "unique_values": {
+    "product": [
+      "Desk Lamp",
+      "Headphones",
+      "Laptop Pro 14",
+      "Mechanical Keyboard",
+      "Monitor 27",
+      "Notebook Pack",
+      "Office Chair",
+      "Standing Desk",
+      "USB-C Hub",
+      "Webcam HD",
+      "Whiteboard",
+      "Wireless Mouse"
+    ],
+    "category": [
+      "Accessories",
+      "Electronics",
+      "Furniture",
+      "Stationery"
+    ],
+    "region": [
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "channel": [
+      "Online",
+      "Phone",
+      "Store"
+    ]
+  },
+  "numeric_ranges": {
+    "quantity": {
+      "min": 1.0,
+      "median": 3.0,
+      "max": 25.0
+    },
+    "price": {
+      "min": 23.65,
+      "median": 366.45,
+      "max": 6048.9
+    },
+    "total": {
+      "min": 23.65,
+      "median": 1125.875,
+      "max": 120978.0
+    }
+  },
+  "iqr_outlier_counts": {
+    "quantity": 15,
+    "price": 15,
+    "total": 13
+  }
+}
+
+Total sales and order counts by region x category
+                    orders  total_sales
+region category                        
+East   Accessories       6      6436.52
+       Electronics      11     60523.35
+       Furniture        10     34880.24
+       Stationery        5      2698.28
+North  Accessories       9     10020.16
+       Electronics      13     99132.93
+       Furniture         5     22248.73
+       Stationery        4       423.02
+South  Accessories       5      5171.49
+       Electronics      16    228082.85
+       Furniture         8     45865.37
+       Stationery        3      1518.94
+West   Accessories       6      1774.59
+       Electronics       8    102095.00
+       Furniture         6     32221.75
+       Stationery        3      1204.90
+
+Benchmark on 100,000 rows: vectorised vs apply(axis=1)
+total = quantity * price   vectorised      1.6 ms | apply     979.1 ms | apply is    606x slower
+product_label              vectorised     63.0 ms | apply     666.4 ms | apply is     11x slower
+
+==============================================================================
+VERDICT - can management trust this dataset?
+==============================================================================
+
+Short answer: structurally yes, financially only with caveats.
+
+What is now reliable
+  * One row per order id (120 rows in -> 118 out), consistent
+    product / category / region / channel, real numbers and real dates.
+  * Nothing was invented: 10 orders without a usable
+    price or quantity have no total; they are NOT counted as 0.
+
+What management should NOT take at face value
+  * The total of 654,298.12 is a LOWER BOUND: it omits those
+    10 orders.
+  * 24 of 118 orders (20%) carry a review flag and they hold
+    18% of the known sales value (three 25-unit orders and the
+    re-keyed ORD-0040 are among them).
+  * Sales are concentrated: the single largest order (ORD-0086, 20 units)
+    is 18% of the total and Electronics is
+    75%. It has a normal price and quantity so
+    we did not flag it as an error, but it is worth about
+    2.6x the rough value of all orders with a missing
+    price (~45,839 at median prices), so confirm it first.
+
+Needs a human (sales ops / finance)
+  1. Fill in the 6 missing prices and
+     4 missing/zero/negative quantities
+     (negative or zero may be returns - decide how to book them).
+  2. Confirm the currency of the 3 prices that arrived with $ / EUR symbols
+     (no exchange rate was applied) and the price outliers (USB-C Hub at 349 and
+     1299.99, Wireless Mouse at 331.55).
+  3. Fix the 2 impossible dates and the 2027 date.
+  4. Decide which ORD-0040 is right (we kept the newer, 27.10).
+  5. Confirm product vs category on the 4 mismatches
+     (we trusted the product name).
+  6. Check the quantities above 20 (25 units) are real bulk orders.
+  7. Ask the source system why ids ORD-0111, ORD-0112 are missing.
+
+written: clean_sales_cleaned.csv, manual_review.csv

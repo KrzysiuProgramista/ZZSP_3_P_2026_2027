@@ -1,0 +1,9 @@
+grouping,group,observations,avg_vehicles,avg_speed_kmh,speed_vs_same_sensor_hour_kmh
+condition,Clear,10914,58.83,38.15,0.3
+condition,Drizzle,594,54.3,38.3,0.26
+condition,Rain,1260,60.1,34.74,-2.89
+condition,Windy,570,57.37,38.8,0.37
+rainfall_band,0 mm (dry),11484,58.76,38.18,0.3
+rainfall_band,0-2 mm,1200,55.9,36.59,-1.35
+rainfall_band,2-5 mm,567,63.13,34.51,-2.77
+rainfall_band,> 5 mm,87,58.72,35.04,-3.35

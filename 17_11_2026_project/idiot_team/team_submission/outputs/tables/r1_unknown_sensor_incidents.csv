@@ -1,0 +1,4 @@
+incident_id,timestamp,sensor_id,incident_type,severity,duration_min,lanes_blocked
+INC-ORPHAN-001,2026-10-22 08:00:00,S-099,debris_on_road,moderate,25,1
+INC-ORPHAN-002,2026-11-03 17:00:00,S-098,vehicle_breakdown,low,18,0
+INC-ORPHAN-003,2026-11-10 11:00:00,S-097,minor_collision,high,40,1

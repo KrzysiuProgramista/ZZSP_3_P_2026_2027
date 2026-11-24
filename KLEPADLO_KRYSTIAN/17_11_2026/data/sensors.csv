@@ -1,0 +1,19 @@
+sensor_id,road_name,district,road_type,speed_limit_kmh
+S-001,Main Avenue,Central,arterial,60
+S-002,Market Street,Central,collector,50
+S-003,Central Boulevard,Central,arterial,60
+S-004,Bridge Road,Riverside,arterial,60
+S-005,Riverbank Avenue,Riverside,collector,50
+S-006,Quay Street,Riverside,local,40
+S-007,Historic Lane,Old Town,local,30
+S-008,Cathedral Street,Old Town,collector,40
+S-009,Museum Road,Old Town,local,30
+S-010,Factory Road,Industrial,arterial,60
+S-011,Logistics Avenue,Industrial,collector,50
+S-012,Depot Street,Industrial,collector,50
+S-013,Campus Drive,University,collector,50
+S-014,Science Avenue,University,arterial,60
+S-015,Library Road,University,local,40
+S-016,Terminal Road,Airport,arterial,70
+S-017,Runway Access,Airport,collector,60
+S-018,Cargo Boulevard,Airport,arterial,70

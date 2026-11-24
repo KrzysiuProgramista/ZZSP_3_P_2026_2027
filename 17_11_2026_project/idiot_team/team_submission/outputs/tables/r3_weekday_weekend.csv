@@ -1,0 +1,3 @@
+day_type,avg_vehicles_per_sensor_hour,avg_speed_kmh,days,total_vehicles,avg_daily_vehicles
+weekday,64.21,37.85,22,610209,27736.77
+weekend,45.07,37.86,9,175248,19472.0

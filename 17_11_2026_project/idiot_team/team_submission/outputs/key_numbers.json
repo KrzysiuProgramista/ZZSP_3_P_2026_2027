@@ -1,0 +1,14 @@
+{
+  "traffic_rows": 13392,
+  "integrated_rows": 13392,
+  "weather_missing_keys": 18,
+  "traffic_rows_without_weather": 54,
+  "unknown_sensor_incidents": [
+    "INC-ORPHAN-001",
+    "INC-ORPHAN-002",
+    "INC-ORPHAN-003"
+  ],
+  "incidents_matched": 127,
+  "busiest_hour": 17,
+  "slowest_day": "2026-11-12"
+}

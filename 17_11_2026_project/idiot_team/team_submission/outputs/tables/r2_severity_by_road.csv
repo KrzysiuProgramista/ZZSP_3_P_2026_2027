@@ -1,0 +1,19 @@
+road_name,district,incidents,avg_severity_score,max_severity_score
+Museum Road,Old Town,9,2.78,4
+Riverbank Avenue,Riverside,8,2.5,3
+Main Avenue,Central,7,2.43,4
+Logistics Avenue,Industrial,7,2.29,3
+Quay Street,Riverside,12,2.25,4
+Depot Street,Industrial,9,2.22,4
+Factory Road,Industrial,10,2.2,3
+Runway Access,Airport,10,2.2,4
+Campus Drive,University,6,2.17,3
+Market Street,Central,4,2.0,3
+Cargo Boulevard,Airport,4,2.0,3
+Central Boulevard,Central,5,1.8,3
+Library Road,University,4,1.75,3
+Science Avenue,University,6,1.67,3
+Cathedral Street,Old Town,3,1.67,2
+Bridge Road,Riverside,11,1.64,4
+Historic Lane,Old Town,8,1.5,2
+Terminal Road,Airport,4,1.5,3

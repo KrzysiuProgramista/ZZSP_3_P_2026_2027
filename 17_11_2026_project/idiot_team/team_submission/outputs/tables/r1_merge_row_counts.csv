@@ -1,0 +1,5 @@
+step,rows
+traffic (raw),13392
+"+ sensors (left, many_to_one)",13392
+"+ weather (left, many_to_one)",13392
+"+ incidents (left, one_to_one)",13392
